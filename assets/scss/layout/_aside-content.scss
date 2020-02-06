@@ -1,0 +1,196 @@
+/* ---------------------------------------------------------------------------*/
+/* MOBILE FIRST - layout/_aside-content.scss                                  */
+/* ---------------------------------------------------------------------------*/
+@charset "UTF-8";
+/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP
+@include media-breakpoint-up(xs) {
+  //////////////////////////////////////////////////////////////////////////////
+  // [ STICKY COMPATIBILITY WITH TOOLBAR ]
+  aside.sticky-top:before {
+    display   : block;
+    content   : ' ';
+    margin-top: -70px;
+    height    : 70px;
+    visibility: hidden;
+    z-index   : 0;
+  }
+  aside.sticky-top {
+    z-index: 0;
+    top    : 70px;
+  }
+  .adminimal-admin-toolbar aside.sticky-top {
+    top: 109px;
+    &:before {
+      display   : block;
+      content   : ' ';
+      margin-top: -109px;
+      height    : 109px;
+      visibility: hidden;
+    }
+  }
+  .adminimal-admin-toolbar.toolbar-tray-open aside.sticky-top {
+    top: 148px;
+    &:before {
+      display   : block;
+      content   : ' ';
+      margin-top: -148px;
+      height    : 148px;
+      visibility: hidden;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// [ CONTENT ASIDE COMMON ]
+#content-aside {
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    font-size  : 1.5rem;
+    position   : relative;
+    margin-left: 15px;
+    color      : $gray-600;
+    &:before {
+      content         : '';
+      width           : 6px;
+      height          : 20px;
+      display         : inline-block;
+      background-color: $gray-600;
+      transition      : all .2s ease-in-out;
+      margin-top      : .25rem;
+      margin-left     : .25rem;
+      position        : absolute;
+      left            : -20px;
+    }
+  }
+  ul:not(.contextual-links) {
+    padding-left: 0;
+    margin-left : 0;
+  }
+  ul:not(.contextual-links) li {
+    margin-left: 0;
+    list-style : none;
+  }
+  ul:not(.contextual-links) a {
+    font-size : 90%;
+    transition: $transition-base;
+  }
+  .view-who-s-online .view-header,
+  div[id*="comments-recent"] .views-field-changed,
+  div[id*="content-recent"] .views-field-changed,
+  div[id*="comments-recent"] .view-empty,
+  div[id*="content-recent"] .view-empty {
+    color    : $gray-600;
+    font-size: 80%;
+  }
+
+  div[id*="comments-recent"] .views-field-changed,
+  div[id*="content-recent"] .views-field-changed {
+    color    : $gray-600;
+    font-size: 80%;
+    position : relative;
+    &:before {
+      content         : '';
+      width           : 15px;
+      height          : 15px;
+      display         : inline-block;
+      background-color: $gray-600;
+      transition      : $transition-base;
+      transform       : translateY(2px);
+      mask            : url('../icon/clock.svg');
+      mask-size       : contain;
+      mask-repeat     : no-repeat;
+      margin-right    : .2rem;
+    }
+  }
+
+  div[id*="comments-recent"],
+  div[id*="content-recent"] {
+    ul:not(.contextual-links) li:nth-child(n+2) {
+      border-top : 1px solid $gray-300;
+      padding-top: .25rem;
+      margin-top : .25rem;
+    }
+  }
+
+  div[id*="comments-recent"],
+  div[id*="content-recent"],
+  div[id*="who-s-new"],
+  div[id*="shortcuts"],
+  div[id*="who-s-online"],
+  nav[id*="tools"],
+  nav[id*="administration"] {
+    .view-empty,
+    .view-header,
+    ul:not(.contextual-links) {
+      padding-left: .75rem;
+    }
+    span[about],
+    ul:not(.contextual-links) a {
+      position: relative;
+      &:hover:before {
+        background-color: darken($primary,20%);
+
+      }
+      &:before {
+        content         : '';
+        width           : 20px;
+        height          : 20px;
+        display         : inline-block;
+        background-color: $primary;
+        margin-right    : .35rem;
+        transform       : translateY(4px);
+        transition      : $transition-base;
+      }
+    }
+  }
+  div[id*="comments-recent"] a:before {
+    mask       : url('../icon/comment.svg');
+    mask-size  : contain;
+    mask-repeat: no-repeat;
+  }
+  div[id*="content-recent"] a:before {
+    mask       : url('../icon/article.svg');
+    mask-size  : contain;
+    mask-repeat: no-repeat;
+  }
+  //////////////////////////////////////////////////////////////////////////////
+  // [ CONTENT ASIDE COMMON ]
+  div[id*="who-s-new"] a:before {
+    mask       : url('../icon/user-1.svg');
+    mask-size  : contain;
+    mask-repeat: no-repeat;
+  }
+  div[id*="who-s-new"] span[about]:before {
+    mask            : url('../icon/user-1.svg');
+    mask-size       : contain;
+    mask-repeat     : no-repeat;
+    background-color: $gray-600;
+    display         : inline-block;
+    width           : 25px;
+    height          : 25px;
+  }
+  div[id*="shortcuts"] a:before {
+    mask       : url('../icon/star.svg');
+    mask-size  : contain;
+    mask-repeat: no-repeat;
+  }
+  ul:not(.contextual-links).menu-tools a:before {
+    mask       : url('../icon/tools.svg');
+    mask-size  : contain;
+    mask-repeat: no-repeat;
+  }
+  div[id*="who-s-online"] a:before {
+    mask       : url('../icon/user-1.svg');
+    mask-size  : contain;
+    mask-repeat: no-repeat;
+  }
+  ul:not(.contextual-links).menu-administration a:before {
+    mask       : url('../icon/gear.svg');
+    mask-size  : contain;
+    mask-repeat: no-repeat;
+    width      : 15px;
+    height     : 15px;
+  }
+}

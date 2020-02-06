@@ -1,0 +1,29 @@
+/* ---------------------------------------------------------------------------*/
+/* MOBILE FIRST - drupal/module/_alert-message.scss                           */
+/* ---------------------------------------------------------------------------*/
+@charset "UTF-8";
+
+////////////////////////////////////////////////////// BREAKPOINT EXTRA SMALL UP
+@include media-breakpoint-up(xs) {
+  //////////////////////////////////////////////////////////////////////////////
+  // [ Z-INDEX ]
+  #toolbar-administration,
+  #toolbar-bar {
+    z-index: 1021;
+  }
+}
+/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP
+@include media-breakpoint-up(md) {
+  //////////////////////////////////////////////////////////////////////////////
+  // [ STICKY TOP NAVBAR VISIBILITY ]
+
+  .adminimal-admin-toolbar header.sticky-top,
+  .toolbar-fixed header.sticky-top {
+    top: 39px;
+  }
+
+  .adminimal-admin-toolbar.toolbar-tray-open header.sticky-top,
+  .toolbar-fixed.toolbar-tray-open header.sticky-top {
+    top: 78px;
+  }
+}

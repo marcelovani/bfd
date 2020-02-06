@@ -1,0 +1,73 @@
+// ---------------------------------------------------------------------------//
+// MOBILE FIRST - MASTER FILE                                                 //
+// ---------------------------------------------------------------------------//
+@charset "UTF-8";
+////////////////////////////////////////////////////////////////////////////
+// [BOOTSTRAP & TOOLS]
+
+// TOOLS
+@import "tools/variable";
+
+// BOOTSTRAP 4
+@import "vendor/bootstrap";
+
+// MIXINS
+@import "tools/mixins";
+
+// VENDOR
+
+////////////////////////////////////////////////////////////////////////////
+// [ CUSTOM ]
+
+// BASE
+@import 'base/base';
+@import 'base/icons';
+
+// PAGE
+@import "content/article";
+@import "content/comment";
+
+// DRUPAL BLOCK
+@import "drupal/block/local-task";
+@import "drupal/block/syndicate";
+
+// DRUPAL FORM
+@import "drupal/form/form-global";
+
+// DRUPAL FORM
+@import "drupal/misc/alert-message";
+
+// DRUPAL MODULE
+@import "drupal/module/adminimal";
+@import "drupal/module/contextual-links";
+
+// LAYOUT
+@import "layout/main";
+@import "layout/aside-content";
+@import "layout/footer";
+@import "layout/footer-sub";
+
+// // HEADER
+@import "layout/header/header-brand";
+@import "layout/header/header-menu";
+@import "layout/header/header-menu--menu-add";
+@import "layout/header/header-menu--menu-nav";
+@import "layout/header/header-menu--menu-nav--search.scss";
+
+// // NAVIGATION
+@import "navigation/pager";
+@import "navigation/breadcrumbs";
+
+// PAGE
+@import "page/page-user";
+@import "page/page-home";
+@import "page/page-contact";
+@import "page/page-search";
+@import "page/page-login";
+@import "page/page-password";
+@import "page/page-register";
+@import "page/page-taxonomy";
+
+// // PRINT
+@import 'base/print/print';
+@import 'base/print/print-class';

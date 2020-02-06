@@ -1,0 +1,17 @@
+/* ---------------------------------------------------------------------------*/
+/* MOBILE FIRST - layout/_page-home.scss                                      */
+/* ---------------------------------------------------------------------------*/
+@charset "UTF-8";
+////////////////////////////////////////////////////// BREAKPOINT EXTRA SMALL UP
+@include media-breakpoint-up(xs) {
+  //////////////////////////////////////////////////////////////////////////////
+  // [ COMMON ]
+  .path-frontpage {
+    .views-row:nth-of-type(n+2) {
+      margin-top : 2rem;
+      margin-left: 0;
+      border-top : 2px solid $gray-400;
+      padding-top: 1.5rem;
+    }
+  }
+}
