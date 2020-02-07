@@ -102,6 +102,12 @@ All native Drupal block and menu are placed and stylized right after installatio
 ## Bootstrap Modal
   Modal code is available in folder **HTML** of this theme. Copy the **modal box** code in a custom block that you create with full html text format, and place the created block in the **modal region**, specify the page where it display in the block seetings, DONT display the title of the block. Finaly, in a page copy the **button modal** code.
 
+
+Create content_after
+-----
+Visit the page [Administering a Drupal 8 site](https://www.drupal.org/docs/8/administering-a-drupal-8-site/managing-content) for more information. Note that the **text in the summary field** is the text used by the home page to list content.
+
+
 BETTER ADMINISTRATION EXPERIENCE
 -----------------------
 
