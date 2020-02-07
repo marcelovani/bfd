@@ -118,6 +118,11 @@ MODULES SUGGESTION
 
 This is a list of simple module allowing you to greatly enhance the drupal usage experience.
 
+
+## pathauto
+
+[pathauto](https://www.drupal.org/project/pathauto) will automatically generates URL/path aliases for various kinds of content.
+
 ## Form placeholder
   [form_placeholder](https://www.drupal.org/project/form_placeholder)
   This module transforms the forms labels into placeholder. It makes the form much clearer
