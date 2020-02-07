@@ -62,10 +62,16 @@
       border-radius: $border-radius;
     }
 
-    // [ DrupaL HP VIEW IMAGE ]
+    // [ Drupal HP VIEW IMAGE ]
     img[class="image-style-medium"] {
       max-width: 40%;
     }
+    // [ Drupal node  VIEW IMAGE ]
+    img[class="image-style-large"] {
+      max-width: 50%;
+    }
+
+    width: 50%;
     // [ ARTICLE META-DATA : AUTHOR, DATE ]
     .node__meta {
       height       : 35px;

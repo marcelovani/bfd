@@ -13462,6 +13462,7 @@ a[class^="social-media-round-"] {
           justify-content: left !important; }
 
 article.node {
+  width: 50%;
   /* [ RELATED LINKS ] */
   /*.node__content {
       clear: left;
@@ -13505,6 +13506,8 @@ article.node {
     border-radius: 0.2rem; }
   article.node img[class="image-style-medium"] {
     max-width: 40%; }
+  article.node img[class="image-style-large"] {
+    max-width: 50%; }
   article.node .node__meta {
     height: 35px;
     margin-bottom: 10px;
@@ -14251,6 +14254,9 @@ footer .region-footer-left .block ul {
     background-size: contain;
     position: absolute;
     top: 0; } }
+
+#page-footer-sub #block-bootstrap-for-drupal-powered-by-drupal {
+  margin-bottom: 1rem; }
 
 #page-footer-sub a {
   color: #fff;
