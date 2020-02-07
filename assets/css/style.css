@@ -13462,7 +13462,6 @@ a[class^="social-media-round-"] {
           justify-content: left !important; }
 
 article.node {
-  width: 50%;
   /* [ RELATED LINKS ] */
   /*.node__content {
       clear: left;
@@ -15038,6 +15037,12 @@ footer .region-footer-left .block ul {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - layout/_page-taxonomy.scss                                  */
 /* ---------------------------------------------------------------------------*/
+.path-taxonomy .views-row:nth-of-type(n+2) {
+  margin-top: 2rem;
+  margin-left: 0;
+  border-top: 2px solid #ced4da;
+  padding-top: 1.5rem; }
+
 .path-taxonomy h1:before {
   -webkit-mask: url("../icon/tag.svg");
           mask: url("../icon/tag.svg");

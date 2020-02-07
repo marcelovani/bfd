@@ -8,6 +8,12 @@
   // [ COMMON ]
   .path-taxonomy {
 
+    .views-row:nth-of-type(n+2) {
+      margin-top : 2rem;
+      margin-left: 0;
+      border-top : 2px solid $gray-400;
+      padding-top: 1.5rem;
+    }
     h1 {
       &:before {
         mask            : url('../icon/tag.svg');
