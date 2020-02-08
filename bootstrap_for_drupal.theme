@@ -1,34 +1,21 @@
 <?php
-
-/**
- * @file
- */
-
-/**
- *
- */
 function bootstrap_for_drupal_preprocess(&$variables) {
-  // [Site name, logo and slogan global variable]
+  // [Site name, logo and slogan global variable].
   $site_config = \Drupal::config('system.site');
   $variables['site_name'] = $site_config->get('name');
   $variables['site_slogan'] = $site_config->get('slogan');
   $variables['logopath'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
 };
 
-/**
- *
- */
 function bootstrap_for_drupal_preprocess_input(&$variables) {
-  // Set a placeholder for all search form elements.
+  // [Set a placeholder for all search form elements].
   if ($variables['attributes']['type'] == 'search') {
     $variables['attributes']['placeholder'] = 'Search...';
   }
 }
 
-/**
- *
- */
-function bootstrap_for_drupal_preprocess_textarea(&$variables) {
-  // Implements theme_preprocess_textarea().
-  $variables['attributes']['class'][] = 'form-control';
-}
+
+  function bootstrap_for_drupal_preprocess_textarea(&$variables) {
+    // [Implements theme_preprocess_textarea].
+    $variables['attributes']['class'][] = 'form-control';
+  }
