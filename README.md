@@ -37,9 +37,9 @@ FEATURES
 -----
 
 ## Advanced navigation:
+ - Sticky navbar - Admin Toolbar compatible
  - dynamic search bar
  - Animated dropdown
- - Admin Toolbar compatible
  - mobile menu with smooth opening
  - Icon for: user menu, contact, language menu
  - Language menu with flag (fr, en, es, de, nl, it, pt-pt, pt-br, ru)
