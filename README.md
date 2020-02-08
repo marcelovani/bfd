@@ -27,7 +27,7 @@ It is also a good bootstrap 4 base solution for developers with SCSS files provi
 
 This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
-
+## Screenshot
 ![Desktop Menu](assets/image/readme/bootstrap-for-drupal-desktop-screenshot.jpg "screnshot")
 
 NOTES
