@@ -27,19 +27,31 @@ It is also a good bootstrap 4 base solution for developers with SCSS files provi
 
 This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
+
+![Desktop Menu](assets/image/readme/bootstrap-for-drupal-desktop-screenshot.jpg "screnshot")
+
 NOTES
 --
 * Windows Edge V18 is not supported (it doesn’t support **mask** CSS properties), only Edge +V79 is supported.
 * Bootstrap Tooltips, popover and modal might not work when logged in
 * This version is build with  Bootstrap v4.4.1
 
+
+## Comparaison with other major Bootstrap based theme
+
+### Bootstrap theme
+[bootstrap](https://www.drupal.org/project/bootstrap) is based on Bootstrap 3, this theme on bootstrap 4. It doesn't propose a "out of the box" solution like this theme does.
+
+## Barrio theme
+[Barrio](https://www.drupal.org/project/bootstrap_barrio) propose a sophisticated configuration of Bootstrap **components/layout** and **color/font** in the theme configuration. This can be out of scope for normal users and also a constraint for developpers who want to have full control on the front end developement with the twig template and SCSS files like this theme proposed. It doesn't propose a "out of the box" solution like this theme does.
+
 FEATURES
 -----
 
 ## Advanced navigation:
- - Sticky navbar - Admin Toolbar compatible
  - dynamic search bar
  - Animated dropdown
+ - Admin Toolbar compatible
  - mobile menu with smooth opening
  - Icon for: user menu, contact, language menu
  - Language menu with flag (fr, en, es, de, nl, it, pt-pt, pt-br, ru)
