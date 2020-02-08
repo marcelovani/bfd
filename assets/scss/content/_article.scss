@@ -63,12 +63,9 @@
     }
 
     // [ Drupal HP VIEW IMAGE ]
-    img[class="image-style-medium"] {
-      max-width: 40%;
-    }
-    // [ Drupal node  VIEW IMAGE ]
+    img[class="image-style-medium"],
     img[class="image-style-large"] {
-      max-width: 50%;
+      max-width: 40%;
     }
     // [ ARTICLE META-DATA : AUTHOR, DATE ]
     .node__meta {
