@@ -85,7 +85,8 @@ FEATURES
 
 INSTALLATION
 -----------
-Extract this theme folder into **/themes/contrib** of your [Drupal 8 installation](https://www.drupal.org/docs/8/install) and go to
+Extract this theme folder into **/themes/contrib** of your
+[Drupal 8 installation](https://www.drupal.org/docs/8/install) and go to
 `/admin/appearance/settings` to set it as **default theme**.
 
 CONFIGURATION
@@ -104,24 +105,28 @@ installation and the website is directly usable. You just have to create
   The maximum length of the slogan is 256 characters
 
 ## MAIN NAVIGATION
-1. Create menu items in the main navigation go to `/admin/structure/menu/manage/main`.
-2. Ceate a dropdown menu, you have to create a child menu item, for that hold/slide the cross of a menu item to the right. **Only one level is supported**.
+1. Create menu items in the main navigation go to
+   `/admin/structure/menu/manage/main`.
+2. Ceate a dropdown menu, you have to create a child menu item, for that
+   hold/slide the cross of a menu item to the right.
+   **Only one level is supported**.
 
 **Note:** You don’t have to check **show as expanded** for the parent links,
- this is automatic. The first level link (the parent) will not be used,
-  Bootstrap make it the dropdown trigger automaticaly. Thus put in that
-   link the target **#** - for exemple.
+this is automatic. The first level link (the parent) will not be used,
+Bootstrap make it the dropdown trigger automaticaly. Thus put in that
+link the target **#** - for exemple.
 
 ## MULTILINGUAL MENU
-  To activate the language menu, go to the module page `/admin/modules` and
+   To activate the language menu, go to the module page `/admin/modules` and
    activate the **language module** in the multilingual section. Go to
-   `/admin/config/regional/language` to add a language. The language menu will automatically be added to the main navigation after the module activation
-   and the menu populated with the proper flags.
-  **Configured language icons** : en, fr, de, it, es, nl, ru, pt-pt, pt-br.
+   `/admin/config/regional/language` to add a language. The language menu
+   will automatically be added to the main navigation after the module
+   activation and the menu populated with the proper flags.
+   **Configured language icons** : en, fr, de, it, es, nl, ru, pt-pt, pt-br.
 
 ## LIST OF CONTACT TYPE (MAIL, PHONE, ETC..)
-  The first footer region is configured to contain a **list of contact type**
-  (mail, phone, etc..), it will automatically add icon to a list (ul). You have
+   The first footer region is configured to contain a **list of contact type**
+   (mail, phone, etc..), it will automatically add icon to a list (ul). You have
    the possibility to copy the code provided from the folder **HTML**, or
    create a list yourself.
 
@@ -140,16 +145,17 @@ installation and the website is directly usable. You just have to create
    Social icon HTML code (svg) is provided in the folder **HTML** of this theme.
 
 ## BOOTSTRAP MODAL
-  Modal code is available in folder **HTML** of this theme. Copy the
-  **modal box** code in a custom block that you create with full html text
-  format, and place the created block in the **modal region**, specify the page
-   where it display in the block seetings, DONT display the title of the block. Finaly, in a page copy the **button modal** code.
+   Modal code is available in folder **HTML** of this theme. Copy the
+   **modal box** code in a custom block that you create with full html text
+   format, and place the created block in the **modal region**, specify the page
+   where it display in the block seetings, DONT display the title of the
+   block. Finaly, in a page copy the **button modal** code.
 
 CREATE CONTENT
 -----
-Visit the page [Administering a Drupal 8 site](https://www.drupal.org/docs/8/administering-a-drupal-8-site/managing-content) for more information. Note that
- the **text in the summary field** is the text used by the home page to list
- content.
+Visit the page [Administering a Drupal 8 site](https://www.drupal.org/docs/8/administering-a-drupal-8-site/managing-content)
+for more information. Note that the **text in the summary field** is the text
+used by the home page to list content.
 
 BETTER ADMINISTRATION EXPERIENCE
 -----------------------
@@ -158,9 +164,9 @@ The **adminimal suite** is the ultimate administration theming solution for
 Drupal, you just have to activate the modules to make it work!  It makes the
 usage of Drupal admin interface much more user friendly. This theme is
 compatible with the Admin toolbar, the sticky bar will position properly when
-one or both of the admin bar are active, in desktop or mobile screen. 	Go to
- `/admin/appearance` and in the **Administration theme** (end of the page)
- choose adminimal.
+one or both of the admin bar are active, in desktop or mobile screen.	Go to
+`/admin/appearance` and in the **Administration theme** (end of the page)
+choose adminimal.
 
 **List of module to install:**
 
@@ -171,7 +177,8 @@ one or both of the admin bar are active, in desktop or mobile screen. 	Go to
 MODULES SUGGESTION
 -------------
 
-This is a list of simple module allowing you to greatly enhance the drupal usage experience.
+This is a list of simple module allowing you to greatly enhance the drupal
+usage experience.
 
 ## PATHAUTO
 
@@ -205,21 +212,25 @@ generates URL/path aliases for various kinds of content.
 
 ## RESPONSIVE FAVICONS
   [responsive_favicons](https://www.drupal.org/project/responsive_favicons)
-  allow you to easily integrate in Drupal the favicons bundle generated at [realfavicongenerator.net](http://realfavicongenerator.net/).
+  allow you to easily integrate in Drupal the favicons bundle generated at
+  [realfavicongenerator.net](http://realfavicongenerator.net/).
 
 FOR DEVELOPERS
 ---------
 
  * All SCSS file are provided
  * Custom bootstrap variable overwrite SCSS file
- * Only SVG icon with mask attribute is used, allowing : color/size/position/transition with CSS. Note that **mask** CSS properties is not supported by
- Edge V18. No use of icon framework ( like fontawesome - weight 2MB), all svg
- icon are local, thus lighter (60kb in total).
- * Maximum bootstrap integration into the theme
- * Gulp file is provided and SCCS files are configured to be build with node.js
+ * Only SVG icon with mask attribute is used, allowing :
+   color/size/position/transition with CSS. Note that **mask** CSS
+   properties is not supported by Edge V18. No use of icon framework
+   (like fontawesome - weight 2MB), all svg icon are local, thus lighter
+   (60kb in total). * Maximum bootstrap integration into the theme
+ * Gulp file is provided and SCCS files are configured to be build
+   with node.js
 
 ## BOOTSTRAP 4 FEATURES
-  The theme is totally build with bootstrap grid system and maximum usage of bootstrap class.
+  The theme is totally build with bootstrap grid system and maximum usage
+   of bootstrap class.
 
   List of Bootstrap components integrated  :
   * status message
@@ -247,4 +258,4 @@ FUTUR DEVELOPEMENT
 REQUIREMENTS
 --------
 
-no requirements
+No requirements.
