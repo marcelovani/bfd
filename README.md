@@ -99,8 +99,8 @@ installation and the website is directly usable. You just have to create
 
 ## LOGO
   The maximum height of the logo in the header is **40px**. To change the
-   logo go to `/admin/appearance/settings/bootstrap_for_drupal` and un-tick
-    **Use the logo supplied by the theme** to upload yours.
+  logo go to `/admin/appearance/settings/bootstrap_for_drupal` and un-tick
+  **Use the logo supplied by the theme** to upload yours.
 
 ## SLOGAN
   The maximum length of the slogan is 256 characters
