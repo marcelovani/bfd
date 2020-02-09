@@ -2,19 +2,6 @@
 // MIXINS                                                                     //
 // ---------------------------------------------------------------------------//
 @charset "UTF-8";
-////////////////////////////////////////////////////////////////////////////////
-// [ ALTERNATE BUTTONS ]
-@each $color, $value in $theme-colors {
-  .btn-#{$color} a {
-    @include button-variant($value, $value);
-  }
-}
-
-@each $color, $value in $theme-colors {
-  .btn-outline-#{$color} a {
-    @include button-outline-variant($value);
-  }
-}
 
 // [ ADD ORIENTATION TO MEDIA QUERY ]
 @mixin orientation($direction) {
