@@ -2,6 +2,7 @@
 
 /**
  * @file
+ * Functions to support theming in the Bootstrap for Drupal theme.
  */
 
 /**
