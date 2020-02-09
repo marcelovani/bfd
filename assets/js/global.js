@@ -78,7 +78,12 @@
    // [ TOOLTIP ]
    $(() => {
      $('[data-toggle='
-       tooltip ']').tooltip();
+       tooltip ']').tooltip({
+       delay: {
+         show: 100,
+         hide: 250
+       }
+     });
    });
 
    // [ POPOVERS ]
