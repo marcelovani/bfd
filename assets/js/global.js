@@ -1,4 +1,5 @@
 (function($, Drupal) {
+  'use strict';
   // //////////////////////////////////////////////////////////////////////////////
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
   if (window.matchMedia("(max-width: 768px)").matches) {
@@ -17,8 +18,7 @@
       const $target = jQuery(target);
       jQuery("html, body")
         .stop()
-        .animate(
-          {
+        .animate({
             scrollTop: $target.offset().top - 100
           }, // set offset value here i.e. 50
           100,
@@ -29,7 +29,6 @@
         );
     }
   });
-
   // //////////////////////////////////////////////////////////////////////////////
   // [ DESKTOP MENU - SEARCH TOGGLE ]
   $("#menu-main").on("click", ".form-actions", function(e) {
