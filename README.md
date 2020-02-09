@@ -154,9 +154,11 @@ link the target **#** - for exemple.
 
 CREATE CONTENT
 -----
-Visit the page [Administering a Drupal 8 site](https://www.drupal.org/docs/8/administering-a-drupal-8-site/managing-content)
+Visit the page [Administering a Drupal 8 site][4]
 for more information. Note that the **text in the summary field** is the text
 used by the home page to list content.
+
+[4]:(https://www.drupal.org/docs/8/administering-a-drupal-8-site/managing-content)
 
 BETTER ADMINISTRATION EXPERIENCE
 -----------------------
@@ -171,9 +173,13 @@ choose adminimal.
 
 **List of module to install:**
 
-* [Admin Toolbar](https://www.drupal.org/project/admin_toolbar)
-* [Adminimal Admin Toolbar](https://www.drupal.org/project/adminimal_admin_toolbar)
-* [Adminimal theme](https://www.drupal.org/project/adminimal_theme)
+* [Admin Toolbar][1]
+* [Adminimal Admin Toolbar][2]
+* [Adminimal theme][3]
+
+[1]:(https://www.drupal.org/project/admin_toolbar)
+[2]:(https://www.drupal.org/project/adminimal_admin_toolbar)
+[3]:(https://www.drupal.org/project/adminimal_theme)
 
 MODULES SUGGESTION
 -------------
