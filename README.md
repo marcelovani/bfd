@@ -29,7 +29,8 @@ The website is directly usable after instalation.
 It is also a good bootstrap 4 base solution for developers with SCSS files  
 provided.
 
-! ! Please contribute and [buy me a coffee](https://www.buymeacoffee.com/octogonedev) ! !
+! ! Please contribute and
+[buy me a coffee](https://www.buymeacoffee.com/octogonedev) ! !
 
 This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
