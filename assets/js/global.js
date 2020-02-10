@@ -48,7 +48,7 @@
     let open = $('#menu-main .dropdown-toggle'),
       a = $('#menu-main .nav').find('.dropdown-toggle');
 
-    open.click (function(e) {
+    open.click(function (e) {
       e.preventDefault();
       let $this = $(this),
         speed = 250;
