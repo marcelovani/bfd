@@ -1,10 +1,11 @@
 (function($, Drupal) {
- 'use strict';
+  'use strict';
   // //////////////////////////////////////////////////////////////////////////////
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
   if (window.matchMedia('(max-width: 768px)').matches) {
     $('#language-selector').addClass('dropup');
-  } else {
+  } else 
+  {
     $('#language-selector').removeClass('dropup');
   }
 
@@ -19,9 +20,9 @@
       jQuery('html, body')
         .stop()
         .animate(
-          {
-            scrollTop: $target.offset().top - 150
-          }, // set offset value here i.e. 50
+        {
+          scrollTop: $target.offset().top - 150
+        }, // set offset value here i.e. 50
           100,
           'swing',
           () => {
