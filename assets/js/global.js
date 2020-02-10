@@ -1,4 +1,4 @@
- (function($, Drupal) {
+(function($, Drupal) {
  'use strict';
   // //////////////////////////////////////////////////////////////////////////////
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
