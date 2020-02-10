@@ -1,4 +1,5 @@
-(function($, Drupal) {
+ (function($, Drupal) {
+ 'use strict';
   // //////////////////////////////////////////////////////////////////////////////
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
   if (window.matchMedia('(max-width: 768px)').matches) {
@@ -13,7 +14,7 @@
     const target = window.location.hash;
     // only try to scroll to offset if target has been set in location hash
 
-    if (target != '') {
+    if (target !== '') {
       const $target = jQuery(target);
       jQuery('html, body')
         .stop()
