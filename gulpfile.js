@@ -1,4 +1,3 @@
-'use strict';
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
@@ -14,7 +13,7 @@ gulp.task('serve', ['sass'], () => {
     .on('change', browserSync.reload);
 });
 
-// Compile sass into CSS & auto-inject into browsers 
+// Compile sass into CSS & auto-inject into browsers.
 gulp.task('sass', () =>
   gulp
   .src('assets/scss/style.scss')
