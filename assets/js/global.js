@@ -1,4 +1,4 @@
-(function($, Drupal) {
+(function ($, Drupal) {
   'use strict';
   // //////////////////////////////////////////////////////////////////////////////
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
@@ -33,7 +33,7 @@
   });
   // //////////////////////////////////////////////////////////////////////////////
   // [ DESKTOP MENU - SEARCH TOGGLE ]
-  $('#menu-main').on('click', '.form-actions', function(e) {
+  $('#menu-main').on('click', '.form-actions', function (e) {
     $('#menu-main')
       .toggleClass('show-search')
       .find('.form-search')
@@ -48,7 +48,7 @@
     let open = $('#menu-main .dropdown-toggle'),
       a = $('#menu-main .nav').find('.dropdown-toggle');
 
-    open.click(function(e) {
+    open.click (function(e) {
       e.preventDefault();
       let $this = $(this),
         speed = 250;
@@ -110,7 +110,7 @@
   // //////////////////////////////////////////////////////////////////////////////
   // [ SUBMIT WITH ENTER KEYSTROKE ]
   $(() => {
-    $('.form-search').keydown(function(event) {
+    $('.form-search').keydown(function (event) {
       // enter has keyCode = 13, change it if you want to use another button
       if (event.keyCode === 13) {
         this.form.submit();
@@ -133,7 +133,7 @@
       }
       else if (!logo.hasClass('hide-logo')) {
         logo.removeClass('show-logo').addClass('hide-logo');
-       }
+      }
     });
   });
 })(jQuery, Drupal);
