@@ -81,7 +81,7 @@
 
   // [ TOOLTIP ]
   $(() => {
-    $("[data-toggle="tooltip"]").tooltip({
+    $('[data-toggle="tooltip"]').tooltip({
       delay: {
         show: 100,
         hide: 250
@@ -91,7 +91,7 @@
 
   // [ POPOVERS ]
   $(() => {
-    $("[data-toggle='popover']").popover();
+    $('[data-toggle="popover"]').popover();
   });
 
   // [ CAROUSEL ]
