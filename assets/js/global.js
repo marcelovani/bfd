@@ -1,4 +1,4 @@
- (function($, Drupal) {  
+ (function($, Drupal) {
  'use strict';
   // //////////////////////////////////////////////////////////////////////////////
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
@@ -81,7 +81,7 @@
 
   // [ TOOLTIP ]
   $(() => {
-    $('[data-toggle="tooltip"]').tooltip({
+    $("[data-toggle="tooltip"]").tooltip({
       delay: {
         show: 100,
         hide: 250
@@ -91,7 +91,7 @@
 
   // [ POPOVERS ]
   $(() => {
-    $('[data-toggle="popover"]').popover();
+    $("[data-toggle='popover']").popover();
   });
 
   // [ CAROUSEL ]
@@ -130,7 +130,7 @@
         if (!logo.hasClass('show-logo')) {
           logo.removeClass('hide-logo').addClass('show-logo');
         }
-      } 
+      }
       else if (!logo.hasClass('hide-logo')) {
         logo.removeClass('show-logo').addClass('hide-logo');
       }
