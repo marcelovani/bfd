@@ -4,8 +4,8 @@
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
   if (window.matchMedia('(max-width: 768px)').matches) {
     $('#language-selector').addClass('dropup');
-  } else 
-  {
+  } 
+  else {
     $('#language-selector').removeClass('dropup');
   }
 
@@ -57,12 +57,14 @@
           .removeClass('active-menu')
           .next('.dropdown-menu')
           .slideUp(speed);
-      } else if (a.hasClass('active-menu') === false) {
+      } 
+      else if (a.hasClass('active-menu') === false) {
         $this
           .addClass('active-menu')
           .next('.dropdown-menu')
           .slideDown(speed);
-      } else {
+      }
+       else {
         a.removeClass('active-menu')
           .next('.dropdown-menu')
           .slideUp(speed);
@@ -128,7 +130,8 @@
         if (!logo.hasClass('show-logo')) {
           logo.removeClass('hide-logo').addClass('show-logo');
         }
-      } else if (!logo.hasClass('hide-logo')) {
+      }
+       else if (!logo.hasClass('hide-logo')) {
         logo.removeClass('show-logo').addClass('hide-logo');
       }
     });
