@@ -45,13 +45,13 @@
   // //////////////////////////////////////////////////////////////////////////////
   // [ MOBILE NAV - SMOOTH OPENING/CLOSING SUBMENU ]
   if (window.matchMedia('(max-width: 768px)').matches) {
-    let open = $('#menu-main .dropdown-toggle'),
-      a = $('#menu-main .nav').find('.dropdown-toggle');
+    let open = $('#menu-main .dropdown-toggle');
+    let a = $('#menu-main .nav').find('.dropdown-toggle');
 
     open.click(function (e) {
       e.preventDefault();
-      let $this = $(this),
-        speed = 250;
+      let $this = $(this);
+      let speed = 250;
       if ($this.hasClass('active-menu') === true) {
         $this
           .removeClass('active-menu')
