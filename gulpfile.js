@@ -1,3 +1,10 @@
+/**
+ * @file
+ * Provides Gulp configurations and tasks for Bootstrap for Drupal theme.
+ */
+
+'use strict';
+
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
