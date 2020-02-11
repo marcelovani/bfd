@@ -217,11 +217,6 @@ generates URL/path aliases for various kinds of content.
   is a simple module allowing you to change the redirection to the user page
   after login.
 
-## RESPONSIVE FAVICONS
-  [responsive_favicons](https://www.drupal.org/project/responsive_favicons)
-  allow you to easily integrate in Drupal the favicons bundle generated at
-  [realfavicongenerator.net](http://realfavicongenerator.net/).
-
 FOR DEVELOPERS
 ---------
 
