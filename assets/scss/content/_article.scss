@@ -5,7 +5,7 @@
 
 ////////////////////////////////////////////////////// BREAKPOINT EXTRA SMALL UP
 @include media-breakpoint-up(xs) {
-  //////////////////////////////////////////////////////////////////////////////
+  // ///////////////////////////////////////////////////////////////////////////
   // [ COMMON ]
   .path-node {
     #block-bootstrap-for-drupal-local-tasks .nav-pills {
@@ -56,6 +56,7 @@
     img {
       max-width: 100%;
     }
+
     img[class*="image-style"] {
       height       : auto;
       float        : left;
