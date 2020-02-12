@@ -15798,11 +15798,14 @@ article.node ol:not([class]) li::marker {
   color: #4ba3c3;
 }
 
+article.node img {
+  max-width: 100%;
+}
+
 article.node img[class*="image-style"] {
   height: auto;
   float: left;
   margin-right: 15px;
-  max-width: 100%;
   margin-top: 8px;
   border-radius: 0.2rem;
 }

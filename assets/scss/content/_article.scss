@@ -53,11 +53,13 @@
       }
     }
     // [ MAKE ARTICLE IMAGE RESPONSIVE ]
+    img {
+      max-width: 100%;
+    }
     img[class*="image-style"] {
       height       : auto;
       float        : left;
       margin-right : 15px;
-      max-width    : 100%;
       margin-top   : 8px;
       border-radius: $border-radius;
     }
