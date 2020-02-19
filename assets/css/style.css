@@ -15755,12 +15755,6 @@ a[class^="social-media-round-"]:before {
   overflow: hidden;
 }
 
-.path-node #block-bootstrap-for-drupal-local-tasks .nav-pills {
-  -webkit-box-pack: left !important;
-  -ms-flex-pack: left !important;
-  justify-content: left !important;
-}
-
 article.node .node-readmore:before {
   -webkit-mask: url("../icon/plus.svg");
   mask: url("../icon/plus.svg");
@@ -16589,7 +16583,6 @@ div[data-drupal-messages] .alert {
   margin: 1rem auto;
   position: relative;
   padding-left: 4rem;
-  display: table;
 }
 div[data-drupal-messages] .alert .placeholder {
   font-weight: 700;
@@ -16632,7 +16625,6 @@ div[data-drupal-messages] .alert.alert-warning:before {
 div[data-drupal-messages] .alert .close {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  line-height: .7;
 }
 
 /* ---------------------------------------------------------------------------*/
@@ -17957,6 +17949,12 @@ footer .region-footer-left .block ul li:before {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - layout/_page-login.scss                                     */
 /* ---------------------------------------------------------------------------*/
+.form-login #block-bootstrap-for-drupal-local-tasks .nav-pills {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .form-login .page-title {
   font-size: 1.75rem;
 }
@@ -17980,6 +17978,12 @@ footer .region-footer-left .block ul li:before {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - layout/_page-password.scss                                  */
 /* ---------------------------------------------------------------------------*/
+.form-password #block-bootstrap-for-drupal-local-tasks .nav-pills {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .form-password .page-title {
   font-size: 1.75rem;
 }
@@ -18014,6 +18018,12 @@ footer .region-footer-left .block ul li:before {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - layout/_page-register.scss                                  */
 /* ---------------------------------------------------------------------------*/
+.form-register #block-bootstrap-for-drupal-local-tasks .nav-pills {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .form-register .page-title {
   font-size: 1.75rem;
 }

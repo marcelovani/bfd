@@ -7,6 +7,9 @@
   //////////////////////////////////////////////////////////////////////////////
   // [ COMMON ]
   .form-login {
+    #block-bootstrap-for-drupal-local-tasks .nav-pills {
+      justify-content: center;
+    }
     .page-title {
       font-size: 1.75rem;
       &:before {

@@ -17,7 +17,6 @@
     }
     position    : relative;
     padding-left: 4rem;
-    display     : table;
     &:before {
       content    : '';
       width      : 35px;
@@ -45,8 +44,7 @@
     }
     // close button
     .close {
-      transition : $transition-base;
-      line-height: .7;
+      transition: $transition-base;
     }
   }
 }
