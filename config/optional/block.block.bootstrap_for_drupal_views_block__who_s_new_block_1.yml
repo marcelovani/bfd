@@ -3,6 +3,7 @@ dependencies:
   config:
     - views.view.who_s_new
   module:
+    - user
     - views
   theme:
     - bootstrap_for_drupal
@@ -19,4 +20,11 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
