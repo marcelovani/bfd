@@ -16,10 +16,9 @@ gulp.task('serve', ['sass'], () => {
 
   gulp
     .watch('assets/scss/**/*.scss', ['sass'])
-    'use strict';
     .on('change', browserSync.reload);
 });
-
+'use strict';
 // Compile sass into CSS & auto-inject into browsers.
 gulp.task('sass', () =>
   gulp
