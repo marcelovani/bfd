@@ -80,8 +80,8 @@ FEATURES
 * Responsive footer and sub footer with 3 regions for each
 * Aside content sticky with icon
 * All native page are stylized
-* books are stylised
-* forums are stylised
+* books are stylized
+* forums are stylized
 * Comments are fully stylized
 * All forms are stylized
 * Print version
