@@ -20,8 +20,8 @@ gulp.task('serve', ['sass'], () => {
 });
 
 // Compile sass into CSS & auto-inject into browsers.
+'use strict'
 gulp.task('sass', () =>
-  'use strict'
   gulp
   .src('assets/scss/style.scss')
   .pipe(sass())
