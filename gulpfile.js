@@ -16,11 +16,11 @@ gulp.task('serve', ['sass'], () => {
 
   gulp
     .watch('assets/scss/**/*.scss', ['sass'])
+    'use strict';
     .on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers.
-'use strict'
 gulp.task('sass', () =>
   gulp
   .src('assets/scss/style.scss')
