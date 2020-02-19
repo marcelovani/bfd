@@ -1,0 +1,165 @@
+/* ---------------------------------------------------------------------------*/
+/* MOBILE FIRST - content/_forum.scss                                       */
+/* ---------------------------------------------------------------------------*/
+@charset "UTF-8";
+
+////////////////////////////////////////////////////// BREAKPOINT EXTRA SMALL UP
+@include media-breakpoint-up(xs) {
+  //////////////////////////////////////////////////////////////////////////////
+  // [ COMMON ]
+  .page-node-type-forum,
+  .path-forum {
+    table {
+      border-collapse: collapse;
+      border-spacing : 0;
+    }
+    thead th {
+      background-color: $secondary;
+      border          : 0;
+    }
+    thead th:first-child {
+      border-radius: $border-radius 0 0 0;
+    }
+    thead th:last-child {
+      border-radius: 0 $border-radius 0 0;
+    }
+    tfoot {
+      border-top: 1px solid $gray-300;
+    }
+    tfoot tr th {
+      background-color: $secondary;
+      min-height      : 2.5rem;
+    }
+    tfoot tr th:first-child {
+      border-radius: 0 0 0 $border-radius;
+    }
+    tfoot tr th:last-child {
+      border-radius: 0 0 $border-radius 0;
+    }
+
+    .forum {
+      .table {
+        .indented {
+          .forum__icon:before {
+            mask            : url('../icon/corner-down-right.svg');
+            mask-size       : cover;
+            mask-repeat     : no-repeat;
+            content         : '';
+            width           : 16px;
+            height          : 16px;
+            display         : inline-block;
+            background-color: $primary;
+            transform       : translateY(2px);
+            transition      : $transition-base;
+            margin-left     : -20px;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        background-color: $gray-100;
+      }
+    }
+    //forum topics
+    .forum__topic .submitted {
+      font-size: 85%;
+    }
+    //actions Links
+    .action-links a {
+      border       : 1px solid $primary;
+      border-radius: $border-radius;
+    }
+    //forum
+    .comment-comment-forum-form {
+      margin-top      : 1rem;
+      border-radius   : $border-radius;
+      background-color: $gray-100;
+      padding         : 1rem;
+    }
+
+    // Forum article
+    article.node--type-forum {
+      //forum tag
+      .field--name-taxonomy-forums {
+        margin: .5rem 0;
+
+        // [ TAGS TAXONOMY ]
+        .field--name-field-tags {
+          margin-top: .75rem;
+        }
+        //title
+        .field__item {
+          display: inline;
+          a {
+            text-decoration: none;
+          }
+        }
+        .field__label {
+          position   : relative;
+          display    : inline;
+          font-weight: normal;
+          &:before {
+            mask            : url('../icon/comment-fill.svg');
+            mask-size       : cover;
+            content         : '';
+            width           : 20px;
+            height          : 20px;
+            display         : inline-block;
+            transform       : translateY(4px);
+            background-color: $body-color;
+            transition      : $transition-base;
+            margin-right    : .5rem;
+            left            : -27px;
+            top             : -2px;
+          }
+          &:after {
+            content: ' : ';
+          }
+        }
+      }
+      //topics comment
+      section[class*="comment-forum"] {
+        //Links
+        ul.links {
+          text-align: right;
+          display   : block;
+        }
+        article.comment {
+          background-color: $gray-100;
+          padding         : 1.5rem 1.5rem .5rem;
+          margin-bottom   : 1rem;
+          border-radius   : $border-radius;
+        }
+        .comment-title a {
+          font-size: 1.65rem;
+          &:before {
+            content         : '';
+            width           : 30px;
+            height          : 30px;
+            display         : inline-block;
+            background-color: $primary;
+            transform       : translateY(5px);
+            margin-right    : .5rem;
+            mask            : url('../icon/reply.svg');
+            mask-size       : contain;
+            mask-repeat     : no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP
+@include media-breakpoint-up(md) {
+
+  .page-node-type-forum,
+  .path-forum {
+
+    .comment-comment-forum-form {
+      padding: 2rem;
+    }
+  }
+}

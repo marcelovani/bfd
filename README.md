@@ -207,6 +207,7 @@ generates URL/path aliases for various kinds of content.
   #edit-name
   #edit-subject-0-value
   #edit-pass
+  #edit-comment-body-0-value
   ```
 ## HONEYPOT
   [honeypot](https://www.drupal.org/project/honeypot)
@@ -244,6 +245,8 @@ FOR DEVELOPERS
 FUTUR DEVELOPEMENT
 -------------
 
+* Error 403/404 page
+* book and forum styling
 * Multi color / font combination in the theme configuration with one click
 (in same layout).
 * Drupal 9 porting
