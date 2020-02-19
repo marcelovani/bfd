@@ -9,7 +9,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], () => {
-  "use strict";
+  'use strict';
   browserSync.init({
     proxy: 'http://d8-composer.dev'
   });
@@ -20,7 +20,8 @@ gulp.task('serve', ['sass'], () => {
 });
 
 // Compile sass into CSS & auto-inject into browsers.
-gulp.task('sass', () => 
+gulp.task('sass', () =>
+  'use strict';
   gulp
   .src('assets/scss/style.scss')
   .pipe(sass())
