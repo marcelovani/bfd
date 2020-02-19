@@ -16792,6 +16792,15 @@ aside.sticky-top {
   margin-top: .25rem;
 }
 
+#content-aside div[id*="newforumtopics"] .view-empty,
+#content-aside div[id*="newforumtopics"] .view-header,
+#content-aside div[id*="newforumtopics"] ul:not(.contextual-links),
+#content-aside div[id*="activeforumtopics"] .view-empty,
+#content-aside div[id*="activeforumtopics"] .view-header,
+#content-aside div[id*="activeforumtopics"] ul:not(.contextual-links),
+#content-aside div[id*="booknavigation"] .view-empty,
+#content-aside div[id*="booknavigation"] .view-header,
+#content-aside div[id*="booknavigation"] ul:not(.contextual-links),
 #content-aside div[id*="comments-recent"] .view-empty,
 #content-aside div[id*="comments-recent"] .view-header,
 #content-aside div[id*="comments-recent"] ul:not(.contextual-links),
@@ -16816,6 +16825,12 @@ aside.sticky-top {
   padding-left: .75rem;
 }
 
+#content-aside div[id*="newforumtopics"] span[about],
+#content-aside div[id*="newforumtopics"] ul:not(.contextual-links) a,
+#content-aside div[id*="activeforumtopics"] span[about],
+#content-aside div[id*="activeforumtopics"] ul:not(.contextual-links) a,
+#content-aside div[id*="booknavigation"] span[about],
+#content-aside div[id*="booknavigation"] ul:not(.contextual-links) a,
 #content-aside div[id*="comments-recent"] span[about],
 #content-aside div[id*="comments-recent"] ul:not(.contextual-links) a,
 #content-aside div[id*="content-recent"] span[about],
@@ -16832,6 +16847,12 @@ aside.sticky-top {
 #content-aside nav[id*="administration"] ul:not(.contextual-links) a {
   position: relative;
 }
+#content-aside div[id*="newforumtopics"] span[about]:hover:before,
+#content-aside div[id*="newforumtopics"] ul:not(.contextual-links) a:hover:before,
+#content-aside div[id*="activeforumtopics"] span[about]:hover:before,
+#content-aside div[id*="activeforumtopics"] ul:not(.contextual-links) a:hover:before,
+#content-aside div[id*="booknavigation"] span[about]:hover:before,
+#content-aside div[id*="booknavigation"] ul:not(.contextual-links) a:hover:before,
 #content-aside div[id*="comments-recent"] span[about]:hover:before,
 #content-aside div[id*="comments-recent"] ul:not(.contextual-links) a:hover:before,
 #content-aside div[id*="content-recent"] span[about]:hover:before,
@@ -16848,6 +16869,12 @@ aside.sticky-top {
 #content-aside nav[id*="administration"] ul:not(.contextual-links) a:hover:before {
   background-color: #2a687e;
 }
+#content-aside div[id*="newforumtopics"] span[about]:before,
+#content-aside div[id*="newforumtopics"] ul:not(.contextual-links) a:before,
+#content-aside div[id*="activeforumtopics"] span[about]:before,
+#content-aside div[id*="activeforumtopics"] ul:not(.contextual-links) a:before,
+#content-aside div[id*="booknavigation"] span[about]:before,
+#content-aside div[id*="booknavigation"] ul:not(.contextual-links) a:before,
 #content-aside div[id*="comments-recent"] span[about]:before,
 #content-aside div[id*="comments-recent"] ul:not(.contextual-links) a:before,
 #content-aside div[id*="content-recent"] span[about]:before,
@@ -16872,6 +16899,42 @@ aside.sticky-top {
   transform: translateY(4px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+#content-aside div[id*="newforumtopics"] a:before {
+  -webkit-mask: url("../icon/comment-fill.svg");
+  mask: url("../icon/comment-fill.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+#content-aside div[id*="activeforumtopics"] a:before {
+  -webkit-mask: url("../icon/thunder.svg");
+  mask: url("../icon/thunder.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+#content-aside div[id*="booknavigation"] nav > .menu:nth-of-type(1) > li:first-child > a:before {
+  -webkit-mask: url("../icon/book.svg");
+  mask: url("../icon/book.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+#content-aside div[id*="booknavigation"] nav .menu li a:before {
+  -webkit-mask: url("../icon/article.svg");
+  mask: url("../icon/article.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 #content-aside div[id*="comments-recent"] a:before {
