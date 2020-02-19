@@ -15751,6 +15751,10 @@ a[class^="social-media-round-"]:before {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - content/_article.scss                                       */
 /* ---------------------------------------------------------------------------*/
+#page-content {
+  overflow: hidden;
+}
+
 .path-node #block-bootstrap-for-drupal-local-tasks .nav-pills {
   -webkit-box-pack: left !important;
   -ms-flex-pack: left !important;
