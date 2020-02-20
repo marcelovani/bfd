@@ -9,13 +9,25 @@
   // [ COMMON ]
   .page-node-type-forum,
   .path-forum {
+    .table-hover tbody tr:hover {
+      color           : #90a0b0;
+      background-color: #f9f9f9;
+    }
     table {
       border-collapse: collapse;
       border-spacing : 0;
     }
+    table td {
+      border-top: 1px solid #f1f1f1;
+    }
+
     thead th {
-      background-color: $secondary;
+      background-color: $primary;
       border          : 0;
+      color           : white;
+      a {
+        color: white;
+      }
     }
     thead th:first-child {
       border-radius: $border-radius 0 0 0;
@@ -23,12 +35,13 @@
     thead th:last-child {
       border-radius: 0 $border-radius 0 0;
     }
-    tfoot {
-      border-top: 1px solid $gray-300;
-    }
     tfoot tr th {
-      background-color: $secondary;
+      background-color: $primary;
       min-height      : 2.5rem;
+      color           : white;
+      a {
+        color: white;
+      }
     }
     tfoot tr th:first-child {
       border-radius: 0 0 0 $border-radius;
