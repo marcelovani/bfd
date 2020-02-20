@@ -4,6 +4,7 @@ dependencies:
     - system.menu.tools
   module:
     - system
+    - user
   theme:
     - bootstrap_for_drupal
 id: bootstrap_for_drupal_tools
@@ -14,10 +15,17 @@ provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
-  label: 'Tools'
+  label: Tools
   provider: system
   label_display: visible
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
