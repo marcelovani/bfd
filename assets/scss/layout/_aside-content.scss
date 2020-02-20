@@ -113,6 +113,34 @@
       margin-top : .25rem;
     }
   }
+
+  div[id*="newforumtopics"] .more-link,
+  div[id*="activeforumtopics"] .more-link {
+    height: 30px;
+    a {
+      font-size: 0;
+      height   : 24px;
+      width    : 24px;
+      display  : inline-block;
+      position : absolute;
+      right    : 0;
+      z-index  : 1;
+      &:before {
+        content         : '';
+        width           : 20px;
+        height          : 20px;
+        display         : inline-block;
+        background-color: $primary;
+        margin-right    : .35rem;
+        transform       : translateY(4px);
+        transition      : $transition-base;
+        mask            : url('../icon/plus.svg');
+        mask-size       : contain;
+        mask-repeat     : no-repeat;
+      }
+    }
+  }
+
   div[id*="newforumtopics"],
   div[id*="activeforumtopics"],
   div[id*="booknavigation"],
@@ -177,8 +205,6 @@
     mask-size  : contain;
     mask-repeat: no-repeat;
   }
-  //////////////////////////////////////////////////////////////////////////////
-  // [ CONTENT ASIDE COMMON ]
   div[id*="who-s-new"] a:before {
     mask       : url('../icon/user-1.svg');
     mask-size  : contain;

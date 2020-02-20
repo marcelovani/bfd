@@ -91,6 +91,16 @@
       background-color: $gray-100;
       padding         : 1rem;
     }
+    //comment meta
+    article.comment footer {
+      color    : $gray-500;
+      font-size: 90%;
+    }
+    //comment links
+    article.comment .links a {
+      text-decoration: none;
+      font-size      : 90%;
+    }
 
     // Forum article
     article.node--type-forum {
