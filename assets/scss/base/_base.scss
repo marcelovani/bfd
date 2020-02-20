@@ -17,8 +17,21 @@
   }
 
   ////////////////////////////////////////////////////////////////////////////
-  // [ HEADINGS ]
-
+  // [ HEADINGS ANCHOR OFFSET]
+  body:not(.user-logged-in) {
+    h1::before,
+    h2::before,
+    h3::before,
+    h4::before,
+    h5::before,
+    h6::before {
+      display   : block;
+      content   : ' ';
+      margin-top: -70px;
+      height    : 70px;
+      visibility: hidden;
+    }
+  }
   // [ MIXINS ]
   #{headings(1, 6)} {
     a {

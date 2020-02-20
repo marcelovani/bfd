@@ -15528,6 +15528,19 @@ details {
   padding: 0 .5rem;
 }
 
+body:not(.user-logged-in) h1::before,
+body:not(.user-logged-in) h2::before,
+body:not(.user-logged-in) h3::before,
+body:not(.user-logged-in) h4::before,
+body:not(.user-logged-in) h5::before,
+body:not(.user-logged-in) h6::before {
+  display: block;
+  content: ' ';
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+}
+
 h1 a,
 h2 a,
 h3 a,
