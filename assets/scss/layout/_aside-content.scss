@@ -116,15 +116,17 @@
 
   div[id*="newforumtopics"] .more-link,
   div[id*="activeforumtopics"] .more-link {
-    height: 30px;
+    position: relative;
+    height  : 30px;
     a {
       font-size: 0;
       height   : 24px;
       width    : 24px;
       display  : inline-block;
       position : absolute;
-      right    : 0;
+      right    : 20px;
       z-index  : 1;
+      top      : -10px;
       &:before {
         content         : '';
         width           : 20px;
