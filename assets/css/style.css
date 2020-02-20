@@ -16748,7 +16748,7 @@ aside.sticky-top {
 }
 
 #content-aside ul:not(.contextual-links) {
-  padding-left: .75rem;
+  padding-left: .5rem;
   margin-left: 0;
 }
 
@@ -16845,30 +16845,12 @@ aside.sticky-top {
   font-weight: 600;
 }
 
-#content-aside div[id*="newforumtopics"] h2,
-#content-aside div[id*="activeforumtopics"] h2,
-#content-aside div[id*="booknavigation"] h2,
-#content-aside div[id*="comments-recent"] h2,
-#content-aside div[id*="content-recent"] h2,
-#content-aside div[id*="who-s-new"] h2,
-#content-aside div[id*="shortcuts"] h2,
-#content-aside div[id*="who-s-online"] h2,
-#content-aside nav[id*="tools"] h2,
-#content-aside nav[id*="administration"] h2 {
+#content-aside .block h2 {
   font-size: 1.5rem;
   position: relative;
   color: #6c757d;
 }
-#content-aside div[id*="newforumtopics"] h2:before,
-#content-aside div[id*="activeforumtopics"] h2:before,
-#content-aside div[id*="booknavigation"] h2:before,
-#content-aside div[id*="comments-recent"] h2:before,
-#content-aside div[id*="content-recent"] h2:before,
-#content-aside div[id*="who-s-new"] h2:before,
-#content-aside div[id*="shortcuts"] h2:before,
-#content-aside div[id*="who-s-online"] h2:before,
-#content-aside nav[id*="tools"] h2:before,
-#content-aside nav[id*="administration"] h2:before {
+#content-aside .block h2:before {
   content: '';
   width: 24px;
   height: 24px;

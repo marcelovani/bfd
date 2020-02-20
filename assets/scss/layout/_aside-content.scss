@@ -47,7 +47,7 @@
     text-decoration: none;
   }
   ul:not(.contextual-links) {
-    padding-left: .75rem;
+    padding-left: .5rem;
     margin-left : 0;
   }
   ul:not(.contextual-links) li {
@@ -58,6 +58,7 @@
     font-size : 90%;
     transition: $transition-base;
   }
+
   .view-who-s-online .view-header,
   div[id*="comments-recent"] .views-field-changed,
   div[id*="content-recent"] .views-field-changed,
@@ -67,6 +68,7 @@
     font-size: 80%;
   }
 
+  // clock icon for recent comment and content
   div[id*="comments-recent"] .views-field-changed,
   div[id*="content-recent"] .views-field-changed {
     color    : $gray-600;
@@ -87,6 +89,7 @@
     }
   }
 
+  // border top for recent comment and content
   div[id*="comments-recent"],
   div[id*="content-recent"] {
     ul:not(.contextual-links) li:nth-child(n+2) {
@@ -125,19 +128,12 @@
     }
   }
 
+  // book block: make active page link more visible
   div[id*="booknavigation"] .menu-item.menu-item--active-trail:not(.menu-item--expanded) {
     font-weight: 600;
   }
-  div[id*="newforumtopics"],
-  div[id*="activeforumtopics"],
-  div[id*="booknavigation"],
-  div[id*="comments-recent"],
-  div[id*="content-recent"],
-  div[id*="who-s-new"],
-  div[id*="shortcuts"],
-  div[id*="who-s-online"],
-  nav[id*="tools"],
-  nav[id*="administration"] {
+  // target all block in content aside
+  .block {
     h2 {
       font-size: 1.5rem;
       position : relative;
@@ -153,6 +149,7 @@
       }
     }
   }
+  // block specific icon
   div[id*="newforumtopics"] h2:before {
     mask       : url('../icon/comment-fill.svg');
     mask-size  : contain;
