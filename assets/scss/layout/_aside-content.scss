@@ -143,6 +143,9 @@
     }
   }
 
+  div[id*="booknavigation"] .menu-item.menu-item--active-trail:not(.menu-item--expanded) {
+    font-weight: 600;
+  }
   div[id*="newforumtopics"],
   div[id*="activeforumtopics"],
   div[id*="booknavigation"],

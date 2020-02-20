@@ -16851,6 +16851,10 @@ aside.sticky-top {
   mask-repeat: no-repeat;
 }
 
+#content-aside div[id*="booknavigation"] .menu-item.menu-item--active-trail:not(.menu-item--expanded) {
+  font-weight: 600;
+}
+
 #content-aside div[id*="newforumtopics"] .view-empty,
 #content-aside div[id*="newforumtopics"] .view-header,
 #content-aside div[id*="newforumtopics"] ul:not(.contextual-links),
