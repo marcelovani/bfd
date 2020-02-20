@@ -11,7 +11,14 @@
     overflow: hidden;
   }
   article.node {
-
+    &.node--unpublished {
+      background-color: #f8f9fa;
+      padding         : 1rem;
+      border-radius   : $border-radius;
+      .entity-moderation-form {
+        background-color: #f8f9fa;
+      }
+    }
     // READ MORE LINK
     .node-readmore {
       &:before {

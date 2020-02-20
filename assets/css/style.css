@@ -15755,6 +15755,15 @@ a[class^="social-media-round-"]:before {
   overflow: hidden;
 }
 
+article.node.node--unpublished {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+article.node.node--unpublished .entity-moderation-form {
+  background-color: #f8f9fa;
+}
+
 article.node .node-readmore:before {
   -webkit-mask: url("../icon/plus.svg");
   mask: url("../icon/plus.svg");
@@ -17929,8 +17938,8 @@ footer .region-footer-left .block ul li:before {
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-transform: translateY(2px);
-  transform: translateY(2px);
+  -webkit-transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .path-search h1 {
