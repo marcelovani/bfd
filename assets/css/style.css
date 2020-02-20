@@ -16630,6 +16630,7 @@ div[data-drupal-messages] .alert .placeholder {
 div[data-drupal-messages] .alert .placeholder a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 div[data-drupal-messages] .alert:before {
   content: '';

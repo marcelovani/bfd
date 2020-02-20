@@ -11,7 +11,8 @@
     .placeholder {
       font-weight: 700;
       a {
-        transition: $transition-base;
+        transition     : $transition-base;
+        text-decoration: none;
       }
 
     }
