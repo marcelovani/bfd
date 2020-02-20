@@ -9,7 +9,7 @@ dependencies:
 id: bootstrap_for_drupal_views_block__comments_recent_block_1
 theme: bootstrap_for_drupal
 region: sidebar_left
-weight: 4
+weight: -7
 provider: null
 plugin: 'views_block:comments_recent-block_1'
 settings:
@@ -18,5 +18,5 @@ settings:
   provider: views
   label_display: visible
   views_label: ''
-  items_per_page: 5 
+  items_per_page: 5
 visibility: {  }

@@ -8,7 +8,7 @@ dependencies:
 id: bootstrap_for_drupal_booknavigation
 theme: bootstrap_for_drupal
 region: sidebar_left
-weight: -8
+weight: -9
 provider: null
 plugin: book_navigation
 settings:

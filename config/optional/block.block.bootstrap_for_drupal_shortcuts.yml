@@ -7,7 +7,7 @@ dependencies:
 id: bootstrap_for_drupal_shortcuts
 theme: bootstrap_for_drupal
 region: sidebar_left
-weight: 2
+weight: -14
 provider: null
 plugin: shortcuts
 settings:
