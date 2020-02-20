@@ -1,3 +1,9 @@
+bootstrap_for_drupal.extra_small:
+  label: small
+  mediaQuery: 'all and (min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
 bootstrap_for_drupal.small:
   label: small
   mediaQuery: 'all and (min-width: 576px)'
@@ -16,7 +22,7 @@ bootstrap_for_drupal.large:
   weight: 2
   multipliers:
     - 1x
-bootstrap_for_drupal.extra:
+bootstrap_for_drupal.extra_large:
   label: 'extra large'
   mediaQuery: 'all and (min-width: 1200px)'
   weight: 3
