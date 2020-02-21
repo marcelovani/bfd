@@ -193,7 +193,7 @@ usage experience.
 
 [pathauto](https://www.drupal.org/project/pathauto) will automatically
 generates URL/path aliases for various kinds of content.
-Below the pattern tu use for the different types of entities:
+Below the pattern to use for the different types of entities:
 
 article, page:
 
