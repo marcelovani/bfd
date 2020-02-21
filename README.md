@@ -199,6 +199,14 @@ Content: article, page
 
 `[node:content-type:name]/[node:title]`
 
+Content: Book
+
+`book/[node:book:parents:join-path]/[node:title]`
+
+Content: forum
+
+`forum/[node:taxonomy_forums:entity:parents:join-path]/[node:taxonomy_forums:entity:name]/[node:title]`
+
 Taxonomy
 
 `[term:vocabulary]/[term:parents:join-path]/[term:name]`
@@ -210,15 +218,6 @@ Media
 user
 
 `user/[user:account-name]`
-
-Content: Book
-
-`book/[node:book:parents:join-path]/[node:title]`
-
-Content: forum
-
-`forum/[node:taxonomy_forums:entity:parents:join-path]/[node:taxonomy_forums:entity:name]/[node:title]`
-
 
 ## FORM PLACEHOLDER
   [form_placeholder](https://www.drupal.org/project/form_placeholder)
@@ -273,8 +272,7 @@ FOR DEVELOPERS
 FUTUR DEVELOPEMENT
 -------------
 
-* Error 403/404 page
-* book and forum styling
+* Error 403/404 page 
 * Multi color / font combination in the theme configuration with one click
 (in same layout).
 * Drupal 9 porting
