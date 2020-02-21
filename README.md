@@ -195,7 +195,7 @@ usage experience.
 generates URL/path aliases for various kinds of content.
 Below the pattern to use for the different types of entities:
 
-article, page
+Content: article, page
 
 `[node:content-type:name]/[node:title]`
 
@@ -211,11 +211,11 @@ user
 
 `user/[user:account-name]`
 
-Book
+Content: Book
 
 `book/[node:book:parents:join-path]/[node:title]`
 
-forum
+Content: forum
 
 `forum/[node:taxonomy_forums:entity:parents:join-path]/[node:taxonomy_forums:entity:name]/[node:title]`
 
