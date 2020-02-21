@@ -272,10 +272,10 @@ FOR DEVELOPERS
 FUTUR DEVELOPEMENT
 -------------
 
-* Error 403/404 page 
+* Error 403/404 page
 * Multi color / font combination in the theme configuration with one click
 (in same layout).
-* Drupal 9 porting
+* Drupal 9 porting.
 * Payd theme with more features:
   - Complete list of HTML typography elements stylized in a template page
   - Static and dynamic bootstrap components with one click copy code
