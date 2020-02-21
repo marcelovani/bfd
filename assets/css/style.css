@@ -15528,12 +15528,12 @@ details {
   padding: 0 .5rem;
 }
 
-body:not(.user-logged-in) h1::before,
-body:not(.user-logged-in) h2::before,
-body:not(.user-logged-in) h3::before,
-body:not(.user-logged-in) h4::before,
-body:not(.user-logged-in) h5::before,
-body:not(.user-logged-in) h6::before {
+body:not(.user-logged-in) #page-content h1::before,
+body:not(.user-logged-in) #page-content h2::before,
+body:not(.user-logged-in) #page-content h3::before,
+body:not(.user-logged-in) #page-content h4::before,
+body:not(.user-logged-in) #page-content h5::before,
+body:not(.user-logged-in) #page-content h6::before {
   display: block;
   content: ' ';
   margin-top: -70px;

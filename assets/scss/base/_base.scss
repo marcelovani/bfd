@@ -18,7 +18,7 @@
 
   ////////////////////////////////////////////////////////////////////////////
   // [ HEADINGS ANCHOR OFFSET]
-  body:not(.user-logged-in) {
+  body:not(.user-logged-in) #page-content {
     h1::before,
     h2::before,
     h3::before,
