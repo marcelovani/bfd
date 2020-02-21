@@ -17762,7 +17762,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-user.scss                                      */
+/* MOBILE FIRST - page/_page-user.scss                                      */
 /* ---------------------------------------------------------------------------*/
 .field--name-user-picture img {
   border-radius: 50%;
@@ -17770,7 +17770,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-home.scss                                      */
+/* MOBILE FIRST - page/_page-home.scss                                      */
 /* ---------------------------------------------------------------------------*/
 .path-frontpage .views-row:nth-of-type(n+2) {
   margin-top: 2rem;
@@ -17780,7 +17780,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-contact.scss                                   */
+/* MOBILE FIRST - page/_page-contact.scss                                   */
 /* ---------------------------------------------------------------------------*/
 .form-contact .page-title {
   font-size: 1.75rem;
@@ -17803,7 +17803,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-search.scss                                    */
+/* MOBILE FIRST - page/_page-search.scss                                    */
 /* ---------------------------------------------------------------------------*/
 .path-search .item-list > h3 {
   color: #dc3545;
@@ -17913,7 +17913,7 @@ footer .region-footer-left .block ul li:before {
 } }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-login.scss                                     */
+/* MOBILE FIRST - page/_page-login.scss                                     */
 /* ---------------------------------------------------------------------------*/
 .form-login #block-bootstrap-for-drupal-local-tasks .nav-pills {
   -webkit-box-pack: center;
@@ -17942,7 +17942,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-password.scss                                  */
+/* MOBILE FIRST - page/_page-password.scss                                  */
 /* ---------------------------------------------------------------------------*/
 .form-password #block-bootstrap-for-drupal-local-tasks .nav-pills {
   -webkit-box-pack: center;
@@ -17982,7 +17982,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-register.scss                                  */
+/* MOBILE FIRST - page/_page-register.scss                                  */
 /* ---------------------------------------------------------------------------*/
 .form-register #block-bootstrap-for-drupal-local-tasks .nav-pills {
   -webkit-box-pack: center;
@@ -18075,7 +18075,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-taxonomy.scss                                  */
+/* MOBILE FIRST - page/_page-taxonomy.scss                                  */
 /* ---------------------------------------------------------------------------*/
 .path-taxonomy .views-row:nth-of-type(n+2) {
   margin-top: 2rem;
@@ -18102,7 +18102,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - layout/_page-home.scss                                      */
+/* MOBILE FIRST - page/_page-activity.scss                                      */
 /* ---------------------------------------------------------------------------*/
 .path-activity .marker {
   color: #fff;
@@ -18112,7 +18112,7 @@ footer .region-footer-left .block ul li:before {
 }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - base/_print.scss                                             */
+/* MOBILE FIRST - base/print/_print.scss                                             */
 /* ---------------------------------------------------------------------------*/
 @media print {
   body {
@@ -18190,7 +18190,7 @@ footer .region-footer-left .block ul li:before {
 } }
 
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - base/_print.scss                                             */
+/* MOBILE FIRST - base/print/_print.scss                                             */
 /* ---------------------------------------------------------------------------*/
 @media print {
   .d-print-block {
