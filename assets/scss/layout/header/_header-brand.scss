@@ -10,7 +10,7 @@
   #header-brand {
     img.logo {
       max-height: 40px;
-      width     : auto;
+      min-width : 40px;
     }
     a.navbar-brand {
       font-weight    : 500;

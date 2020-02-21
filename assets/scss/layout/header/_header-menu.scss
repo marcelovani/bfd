@@ -41,7 +41,8 @@
     // logo size
     .logo {
       max-height: 40px;
-      width     : auto;
+      min-width : 40px;
+      padding   : 0;
     }
   }
 }

@@ -17138,7 +17138,7 @@ footer .region-footer-left .block ul li:before {
 /* ---------------------------------------------------------------------------*/
 #header-brand img.logo {
   max-height: 40px;
-  width: auto;
+  min-width: 40px;
 }
 
 #header-brand a.navbar-brand {
@@ -17181,7 +17181,8 @@ footer .region-footer-left .block ul li:before {
 }
 #header-menu .logo {
   max-height: 40px;
-  width: auto;
+  min-width: 40px;
+  padding: 0;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
