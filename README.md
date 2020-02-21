@@ -195,27 +195,27 @@ usage experience.
 generates URL/path aliases for various kinds of content.
 Below the pattern to use for the different types of entities:
 
-article, page:
+article, page
 
 `[node:content-type:name]/[node:title]`
 
-Taxonomy:
+Taxonomy
 
 `[term:vocabulary]/[term:parents:join-path]/[term:name]`
 
-Media:
+Media
 
 `media/[media:bundle]/[media:name]`
 
-user:
+user
 
 `user/[user:account-name]`
 
-Book:
+Book
 
 `book/[node:book:parents:join-path]/[node:title]`
 
-forum:
+forum
 
 `forum/[node:taxonomy_forums:entity:parents:join-path]/[node:taxonomy_forums:entity:name]/[node:title]`
 
