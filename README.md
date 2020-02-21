@@ -193,6 +193,32 @@ usage experience.
 
 [pathauto](https://www.drupal.org/project/pathauto) will automatically
 generates URL/path aliases for various kinds of content.
+Below the patern tu use for the different type of entities:
+
+article, page:
+
+`[node:content-type:name]/[node:title]`
+
+Taxonomy:
+
+`[term:vocabulary]/[term:parents:join-path]/[term:name]`
+
+Media:
+
+`media/[media:bundle]/[media:name]`
+
+user:
+
+`user/[user:account-name]`
+
+Book:
+
+`book/[node:book:parents:join-path]/[node:title]`
+
+forum:
+
+`forum/[node:taxonomy_forums:entity:parents:join-path]/[node:taxonomy_forums:entity:name]/[node:title]`
+
 
 ## FORM PLACEHOLDER
   [form_placeholder](https://www.drupal.org/project/form_placeholder)
