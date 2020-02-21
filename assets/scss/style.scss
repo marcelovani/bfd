@@ -23,7 +23,7 @@
 @import 'base/base';
 @import 'base/icons';
 
-// PAGE
+// CONTENT
 @import "content/article";
 @import "content/comment";
 @import "content/book";
@@ -69,6 +69,7 @@
 @import "page/page-password";
 @import "page/page-register";
 @import "page/page-taxonomy";
+@import "page/page-activity";
 
 // // PRINT
 @import 'base/print/print';
