@@ -20,6 +20,29 @@
   });
 
   // //////////////////////////////////////////////////////////////////////////////
+  // [ ANCHOR OFFSET ]
+    $(() => {
+      const target = window.location.hash;
+      // only try to scroll to offset if target has been set in location hash
+
+      if (target !== '') {
+        const $target = jQuery(target);
+        jQuery('html, body')
+          .stop()
+          .animate(
+          {
+            scrollTop: $target.offset().top - 150
+          }, // set offset value here i.e. 50
+            100,
+            'swing',
+            () => {
+              window.location.hash = target - 80;
+            }
+          );
+      }
+    });
+
+  // //////////////////////////////////////////////////////////////////////////////
   // [ MOBILE NAV - SMOOTH OPENING/CLOSING SUBMENU ]
   if (window.matchMedia('(max-width: 768px)').matches) {
     let open = $('#menu-main .dropdown-toggle');
