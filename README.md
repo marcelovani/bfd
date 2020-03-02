@@ -21,9 +21,9 @@ INTRODUCTION
 This theme provides a base Bootstrap 4 solution for Drupal 8 with an advanced
 navigation for desktop and mobile.
 
-This theme aims to provide users with **the best possible experience out of the box**,  
-right after Drupal installation: All native Drupal blocks and menus are placed  
-and stylized along with all native pages and forms.
+This theme aims to provide users with **the best possible experience out
+of the box**, right after Drupal installation: All native Drupal blocks and
+menus are placed and stylized along with all native pages and forms.
 
 It is also a good bootstrap 4 base solution for developers with SCSS files  
 provided.
@@ -38,7 +38,8 @@ This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
 NOTES
 --
-* Windows Edge V18 is not supported (it does not support **mask** CSS properties)
+* Windows Edge V18 is not supported (it does not support **mask** CSS
+  properties)
 , only Edge +V79 is supported.
 * Bootstrap Tooltips, popover and modal might not work when logged in
 * This version is built with  Bootstrap v4.4.1
@@ -127,9 +128,9 @@ link the target **#** - for example.
 
 ## LIST OF CONTACT TYPES (MAIL, PHONE, ETC..)
    The first footer region is configured to contain a **list of contact types**
-   (mail, phone, etc..); it will automatically add the icons to a list (ul). You have
-   the possibility to copy the code provided in the **HTML** folder, or to
-   create a list yourself.
+   (mail, phone, etc..); it will automatically add the icons to a list (ul).
+   You have the possibility to copy the code provided in the **HTML** folder,
+   or to create a list yourself.
 
   Order of the links:
   * Link
