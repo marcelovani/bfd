@@ -53,8 +53,8 @@ like this theme does.
 
 ### BARRIO THEME
 [Barrio](https://www.drupal.org/project/bootstrap_barrio) offers a
-sophisticated configuration of the Bootstrap **components/layout** and
-**color/font** in the theme configuration. This may be out of reach for normal
+sophisticated configuration of the Bootstrap **components/layouts** and
+**colors/fonts** in the theme configuration. This may be out of reach for normal
 users and is also a constraint for developers who want to have total control
 over front-end development with only the Twig templates and SCSS files as
 this theme offers. It does not offer a "ready to use" solution as this
