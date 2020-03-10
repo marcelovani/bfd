@@ -17,13 +17,12 @@
   //////////////////////////////////////////////////////////////////////////////
   // [ STICKY TOP NAVBAR VISIBILITY ]
 
-  .adminimal-admin-toolbar header.sticky-top,
-  .toolbar-fixed header.sticky-top {
+  .toolbar-horizontal header.sticky-top,
+  .toolbar-vertical.toolbar-tray-open header.sticky-top {
     top: 39px;
   }
 
-  .adminimal-admin-toolbar.toolbar-tray-open header.sticky-top,
-  .toolbar-fixed.toolbar-tray-open header.sticky-top {
+  .toolbar-horizontal.toolbar-tray-open header.sticky-top {
     top: 78px;
   }
 }
