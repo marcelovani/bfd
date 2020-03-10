@@ -16619,20 +16619,20 @@ select {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - drupal/misc/_alert-message.scss                             */
 /* ---------------------------------------------------------------------------*/
-div[data-drupal-messages] .alert {
+.alert {
   margin: 1rem auto;
   position: relative;
   padding-left: 4rem;
 }
-div[data-drupal-messages] .alert .placeholder {
+.alert .placeholder {
   font-weight: 700;
 }
-div[data-drupal-messages] .alert .placeholder a {
+.alert .placeholder a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
-div[data-drupal-messages] .alert:before {
+.alert:before {
   content: '';
   width: 35px;
   height: 35px;
@@ -16642,28 +16642,28 @@ div[data-drupal-messages] .alert:before {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-div[data-drupal-messages] .alert.alert-danger:before {
+.alert.alert-danger:before {
   -webkit-mask: url("../icon/x-circle-fill.svg");
   mask: url("../icon/x-circle-fill.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #dc3545;
 }
-div[data-drupal-messages] .alert.alert-primary:before {
+.alert.alert-primary:before {
   -webkit-mask: url("../icon/info-fill.svg");
   mask: url("../icon/info-fill.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #17a2b8;
 }
-div[data-drupal-messages] .alert.alert-warning:before {
+.alert.alert-warning:before {
   -webkit-mask: url("../icon/alert-circle-fill.svg");
   mask: url("../icon/alert-circle-fill.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #ffc107;
 }
-div[data-drupal-messages] .alert .close {
+.alert .close {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

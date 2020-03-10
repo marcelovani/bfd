@@ -6,7 +6,7 @@
 @include media-breakpoint-up(xs) {
   //////////////////////////////////////////////////////////////////////////////
   // [ BOX ]
-  div[data-drupal-messages] .alert {
+  .alert {
     margin      : 1rem auto;
     .placeholder {
       font-weight: 700;
