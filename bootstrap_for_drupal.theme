@@ -20,7 +20,7 @@ function bootstrap_for_drupal_preprocess(&$variables) {
  */
 function bootstrap_for_drupal_preprocess_input(&$variables) {
   if ($variables['attributes']['type'] == 'search') {
-    $variables['attributes']['placeholder'] = 'Search...';
+    $variables['attributes']['placeholder'] = t('Search');
   }
 }
 
