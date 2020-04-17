@@ -27,12 +27,7 @@
   ////////////////////////////////////////////////////////////////////////////
   // [ LINK ]
   a {
-    color          : $primary;
-    transition     : $transition-base;
-    text-decoration: underline;
-    &:hover {
-      color: darken($primary, 10%);
-    }
+    transition: $transition-base;
   }
 
 }

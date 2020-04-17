@@ -9,32 +9,33 @@
   aside.sticky-top:before {
     display   : block;
     content   : ' ';
-    margin-top: -70px;
-    height    : 70px;
+    margin-top: -35px;
+    height    : 35px;
     visibility: hidden;
     z-index   : 0;
   }
   aside.sticky-top {
     z-index: 0;
-    top    : 70px;
+    top    : 35px;
   }
-  .adminimal-admin-toolbar aside.sticky-top {
-    top: 109px;
+  .toolbar-horizontal aside.sticky-top,
+  .toolbar-vertical.toolbar-tray-open aside.sticky-top {
+    top: 55px;
     &:before {
       display   : block;
       content   : ' ';
-      margin-top: -109px;
-      height    : 109px;
+      margin-top: -55px;
+      height    : 55px;
       visibility: hidden;
     }
   }
-  .adminimal-admin-toolbar.toolbar-tray-open aside.sticky-top {
-    top: 148px;
+  .toolbar-horizontal.toolbar-tray-open aside.sticky-top {
+    top: 75px;
     &:before {
       display   : block;
       content   : ' ';
-      margin-top: -148px;
-      height    : 148px;
+      margin-top: -75px;
+      height    : 75px;
       visibility: hidden;
     }
   }
@@ -43,12 +44,20 @@
 //////////////////////////////////////////////////////////////////////////////
 // [ CONTENT ASIDE COMMON ]
 #content-aside {
+  div[id^="block-"],
+  nav[id^="block-"] {
+    background-color: $gray-100;
+    padding         : 1rem;
+    border-radius   : $border-radius;
+    margin-bottom   : .75rem;
+  }
   a {
     text-decoration: none;
   }
   ul:not(.contextual-links) {
-    padding-left: .5rem;
-    margin-left : 0;
+    padding-left : .5rem;
+    margin-left  : 0;
+    margin-bottom: 0;
   }
   ul:not(.contextual-links) li {
     margin-left: 0;
@@ -61,9 +70,9 @@
 
   .view-who-s-online .view-header,
   div[id*="comments-recent"] .views-field-changed,
-  div[id*="content-recent"] .views-field-changed,
   div[id*="comments-recent"] .view-empty,
-  div[id*="content-recent"] .view-empty {
+  div[id*="content-recent"] .view-empty,
+  div[id*="content-recent"] .views-field-changed {
     color    : $gray-600;
     font-size: 80%;
   }
@@ -71,9 +80,7 @@
   // clock icon for recent comment and content
   div[id*="comments-recent"] .views-field-changed,
   div[id*="content-recent"] .views-field-changed {
-    color    : $gray-600;
-    font-size: 80%;
-    position : relative;
+    position: relative;
     &:before {
       content         : '';
       width           : 15px;
@@ -140,69 +147,15 @@
       color    : $gray-600;
       &:before {
         content         : '';
-        width           : 24px;
-        height          : 24px;
+        width           : 25px;
+        height          : 10px;
         display         : inline-block;
         background-color: $gray-600;
-        margin-right    : .35rem;
-        transform       : translateY(4px);
+        border-radius   : 2px;
+        margin-left     : -1.5rem;
+        margin-right    : .75rem;
+        transform       : translateY(-2px);
       }
     }
-  }
-  // block specific icon
-  div[id*="newforumtopics"] h2:before {
-    mask       : url('../icon/comment-fill.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="activeforumtopics"] h2:before {
-    mask       : url('../icon/thunder.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="booknavigation"] h2:before {
-    mask       : url('../icon/book.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="comments-recent"] h2:before {
-    mask       : url('../icon/comment.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="content-recent"] h2:before {
-    mask       : url('../icon/article.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="who-s-new"] h2:before {
-    mask       : url('../icon/user-1.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="who-s-new"] h2:before {
-    mask       : url('../icon/user-1.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="shortcuts"] h2:before {
-    mask       : url('../icon/star.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  nav[id*="tools"] h2:before {
-    mask       : url('../icon/tools.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  div[id*="who-s-online"] h2:before {
-    mask       : url('../icon/user-1.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
-  }
-  nav[id*="administration"] h2:before {
-    mask       : url('../icon/gear.svg');
-    mask-size  : contain;
-    mask-repeat: no-repeat;
   }
 }

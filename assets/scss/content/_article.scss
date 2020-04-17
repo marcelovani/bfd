@@ -112,39 +112,36 @@
     }
 
     // [ TAGS TAXONOMY ]
-    .field--name-field-tags {
+    .field--name-field-tags,
+    .field--name-taxonomy-forums {
       margin-top: .75rem;
-    }
-    //title
-    .field__label {
-      position   : relative;
-      display    : inline;
-      font-weight: normal;
-      &:before {
-        mask            : url('../icon/tag.svg');
-        mask-size       : cover;
-        content         : '';
-        width           : 16px;
-        height          : 16px;
-        display         : inline-block;
-        background-color: $body-color;
-        transition      : $transition-base;
-        margin-right    : .5rem;
-        left            : -27px;
-        top             : -2px;
+      display   : inline-block;
+      font-size : 90%;
+      //title
+      .field__label {
+        position   : relative;
+        display    : inline-block;
+        font-weight: normal;
+        &:before {
+          mask            : url('../icon/tag.svg');
+          mask-size       : cover;
+          content         : '';
+          width           : 16px;
+          height          : 16px;
+          display         : inline-block;
+          background-color: $body-color;
+          transition      : $transition-base;
+          margin-right    : .5rem;
+          left            : -27px;
+          top             : -2px;
+        }
+        &:after {
+          content: ' : ';
+        }
       }
-      &:after {
-        content: ' : ';
-      }
-    }
-    //taxonomy item
-    .field__items {
-      display  : inline;
-      font-size: 90%;
-      a {
-        text-decoration: none;
-      }
-      .field__item {
+      //taxonomy item
+      .field__item,
+      .field__items {
         display: inline;
         &:after {
           content: ', ';
