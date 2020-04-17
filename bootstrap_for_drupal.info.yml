@@ -1,8 +1,9 @@
 # METADATA
 name: Bootstrap for Drupal
 type: theme
-description: 'Bootstrap 4 for Drupal 8 - octogone.dev' 
+description: 'Bootstrap for Drupal - octogone.dev'
 core: 8.x
++core_version_requirement: ^8 || ^9
 base theme: classy
 
 libraries:
