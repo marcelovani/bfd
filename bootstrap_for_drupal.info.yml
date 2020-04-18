@@ -3,7 +3,7 @@ name: Bootstrap for Drupal
 type: theme
 description: 'Bootstrap for Drupal - octogone.dev'
 core: 8.x
-+core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9
 base theme: classy
 
 libraries:
