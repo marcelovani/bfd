@@ -17131,8 +17131,8 @@ footer .region-footer-left .block ul li:before {
 }
 #menu-add button a[href*='user']:before,
 #menu-add ul:not(.contextual-links) a[href*='user']:before {
-  -webkit-mask: url("../icon/user.svg");
-  mask: url("../icon/user.svg");
+  -webkit-mask: url("../icon/user-1.svg");
+  mask: url("../icon/user-1.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
 }
@@ -17171,48 +17171,102 @@ footer .region-footer-left .block ul li:before {
   -webkit-mask-size: cover;
   mask-size: cover;
 }
-#menu-add #block-bootstrap-for-drupal-syndicate .feed-icon {
-  display: inline;
-  background: none;
-  margin-top: 0;
-}
-#menu-add #block-bootstrap-for-drupal-language-interface {
+#menu-add .block-language {
   width: 30px;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown-toggle:after {
+#menu-add .block-language .dropdown-toggle:after {
   border: 0;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown {
-  height: 35px;
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    opacity: 0;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown button {
+  100% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+    opacity: 1;
+}
+  0% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    opacity: 0;
+} }
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    opacity: 0;
+}
+  100% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+    opacity: 1;
+}
+  0% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    opacity: 0;
+} }
+#menu-add .block-language .slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+#menu-add .block-language .animate {
+  animation-duration: .2s;
+  -webkit-animation-duration: .2s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+#menu-add .block-language .dropdown {
+  height: 39px;
+}
+#menu-add .block-language .dropdown button {
   padding: 0;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown button:focus {
+#menu-add .block-language .dropdown button:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .btn {
+#menu-add .block-language .dropdown .btn {
   vertical-align: unset;
   padding-left: 0;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu {
-  border-radius: 0.2rem;
-  padding: 4px;
+#menu-add .block-language .dropdown .dropdown-menu {
+  padding: 6px;
   min-width: inherit;
-  background: #e9ecef;
+  background: #33a1fd;
+  border: 0;
+  border-radius: 0;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul {
+#menu-add .block-language .dropdown .dropdown-menu:after {
+  bottom: 100%;
+  left: 30%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #33a1fd;
+  border-width: 8px;
+  margin-top: 1rem;
+}
+#menu-add .block-language .dropdown .dropdown-menu ul {
   margin-bottom: 0;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul.show {
+#menu-add .block-language .dropdown .dropdown-menu ul.show {
   display: block;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul li:not(:first-of-type) {
+#menu-add .block-language .dropdown .dropdown-menu ul li:not(:first-of-type) {
   margin-top: 5px;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a,
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a,
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a {
   font-size: 0;
   height: 21px;
   width: 30px;
@@ -17220,48 +17274,48 @@ footer .region-footer-left .block ul li:before {
   background-size: contain;
   background-repeat: no-repeat;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a:hover,
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a:hover {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a:hover,
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a:hover {
   background-color: transparent;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a:before,
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a:before {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a:before,
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a:before {
   background-color: transparent;
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="fr"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="fr"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="fr"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="fr"] {
   background-image: url("../image/flags/France.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="en"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="en"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="en"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="en"] {
   background-image: url("../image/flags/United-Kingdom.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="es"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="es"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="es"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="es"] {
   background-image: url("../image/flags/Spain.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="de"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="de"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="de"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="de"] {
   background-image: url("../image/flags/Germany.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="nl"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="nl"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="nl"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="nl"] {
   background-image: url("../image/flags/Netherlands.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="it"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="it"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="it"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="it"] {
   background-image: url("../image/flags/Italy.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="pt-pt"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="pt-pt"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="pt-pt"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="pt-pt"] {
   background-image: url("../image/flags/Portugal.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="pt-br"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="pt-br"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="pt-br"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="pt-br"] {
   background-image: url("../image/flags/Brazil.png");
 }
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu #language-selector a[hreflang="ru"],
-#menu-add #block-bootstrap-for-drupal-language-interface .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="ru"] {
+#menu-add .block-language .dropdown .dropdown-menu #language-selector a[hreflang="ru"],
+#menu-add .block-language .dropdown .dropdown-menu ul:not(.contextual-links) a[hreflang="ru"] {
   background-image: url("../image/flags/Russia.png");
 }
 
