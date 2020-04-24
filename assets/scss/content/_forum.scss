@@ -22,7 +22,7 @@
     }
 
     thead th {
-      background-color: $primary;
+      background-color: $secondary;
       border          : 0;
       color           : white;
       a {
@@ -36,7 +36,7 @@
       border-radius: 0 $border-radius 0 0;
     }
     tfoot tr th {
-      background-color: $primary;
+      background-color: $secondary;
       min-height      : 2.5rem;
       color           : white;
       a {

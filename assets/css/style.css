@@ -16334,7 +16334,7 @@ article .node__links li {
 
 .page-node-type-forum thead th,
 .path-forum thead th {
-  background-color: #33a1fd;
+  background-color: #0f4c58;
   border: 0;
   color: white;
 }
@@ -16355,7 +16355,7 @@ article .node__links li {
 
 .page-node-type-forum tfoot tr th,
 .path-forum tfoot tr th {
-  background-color: #33a1fd;
+  background-color: #0f4c58;
   min-height: 2.5rem;
   color: white;
 }
