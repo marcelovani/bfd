@@ -40,6 +40,8 @@ This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 NOTES
 ======
 
+**Before updating from 8.x-1.x to 8.x-2.x., create an image style named "wide" (600x200, scale and crop). Or Uninstall and reinstall the theme - but that way you will have to replace the blocks.**
+
 * Windows Edge V18 is not supported (it does not support **mask** CSS
   properties)
 , only Edge +V79 is supported.
