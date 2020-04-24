@@ -17521,10 +17521,10 @@ footer .region-footer-left .block ul li:before {
     margin-left: -20px;
     margin-top: 1rem;
 }
-  #menu-main .nav-item:not(.active) {
+  #menu-main .nav-item a {
     position: relative;
 }
-  #menu-main .nav-item:not(.active):before {
+  #menu-main .nav-item a:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -17532,19 +17532,23 @@ footer .region-footer-left .block ul li:before {
     bottom: 0;
     left: 0;
     background-color: #33a1fd;
-    visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transition: all .3s ease-in-out 0s;
     transition: all .3s ease-in-out 0s;
 }
-  #menu-main .nav-item:not(.active):hover:before {
+  #menu-main .nav-item a:not(.is-active):before {
+    visibility: hidden;
+}
+  #menu-main .nav-item a:not(.is-active):hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-  #menu-main .nav-item.active {
-    border-bottom: 2px solid #33a1fd;
+  #menu-main .nav-item a.is-active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 } }
 
 /* ---------------------------------------------------------------------------*/

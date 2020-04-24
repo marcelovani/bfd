@@ -173,7 +173,7 @@
     }
 
     // [ BORDER BOTTOM ANIMATION ]
-    .nav-item:not(.active) {
+    .nav-item a {
       position: relative;
       &:before {
         content           : '';
@@ -183,11 +183,15 @@
         bottom            : 0;
         left              : 0;
         background-color  : $primary;
-        visibility        : hidden;
         -webkit-transform : scaleX(0);
         transform         : scaleX(0);
         -webkit-transition: all .3s ease-in-out 0s;
         transition        : all .3s ease-in-out 0s;
+      }
+    }
+    .nav-item a:not(.is-active) {
+      &:before {
+        visibility: hidden;
       }
       &:hover:before {
         visibility       : visible;
@@ -195,8 +199,12 @@
         transform        : scaleX(1);
       }
     }
-    .nav-item.active {
-      border-bottom: 2px solid $primary;
+    .nav-item a.is-active {
+      &:before {
+        visibility       : visible;
+        -webkit-transform: scaleX(1);
+        transform        : scaleX(1);
+      }
     }
   }
 }
