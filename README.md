@@ -81,10 +81,13 @@ FEATURES
  * All native pages are stylized
  * Multilingual support
  * Comments are stylized
- * Forums are stylized [<a href="https://bootstrap-for-drupal.octogone.dev/forum">Demo</a>]
- * Books are stylized [<a href="https://bootstrap-for-drupal.octogone.dev/node/12">Demo</a>]
+ * Forums are stylized [Demo][5]
+ * Books are stylized  [Demo][6]
  * All forms are stylized
  * Print version
+
+[5]:(https://bootstrap-for-drupal.octogone.dev/forum)
+[6]:(https://bootstrap-for-drupal.octogone.dev/node/12)
 
 INSTALLATION
 -----------
