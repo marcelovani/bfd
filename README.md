@@ -27,11 +27,12 @@ This theme provides an advanced main navigation for desktop and mobile with a
 dynamic search bar, see it in action in the **animated gif on the right
 hand side**.
 It is a Bootstrap 4 base solution for developers with SCSS files provided.
+
 This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
-[![Demo](assets/image/readme/demo-button.png)][7]
-
 [![Support us by offering a coffee](assets/image/readme/support-button.png)][8]
+
+[![Demo](assets/image/readme/demo-button.png)][7]
 
 ## SCREENSHOT
 ![Desktop](assets/image/readme/bootstrap-for-drupal-desktop-screenshot.jpg "screnshot")
@@ -261,7 +262,7 @@ FOR DEVELOPERS
    color/size/position/transition with CSS. Note that **mask** CSS
    properties are not supported by Edge V18. No use of icon frameworks
    (like fontawesome - weight 2MB), all svg icons are local and thus lighter
-   (60kb in total). * Maximum bootstrap integration into the theme
+   (60kb in total). Maximum bootstrap integration into the theme
  * Gulp file is provided and SCCS files are configured to be built
    with node.js
 
