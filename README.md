@@ -150,7 +150,6 @@ anonymous  to **View content hits** at the page
 CREATE CONTENT
 -----
 
-
 Visit the page [Administering a Drupal 8 site][4]
 for more information. Note that the **text in the summary field** is the text
 used by the home page to list content.
