@@ -26,6 +26,7 @@
 // CONTENT
 @import "content/article";
 @import "content/comment";
+@import 'content/common';
 @import "content/book";
 @import "content/forum";
 
@@ -62,7 +63,7 @@
 
 // PAGE
 @import "page/page-user";
-@import "page/page-home";
+@import "page/page-frontpage";
 @import "page/page-contact";
 @import "page/page-search";
 @import "page/page-login";

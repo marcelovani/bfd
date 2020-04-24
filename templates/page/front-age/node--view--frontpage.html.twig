@@ -73,6 +73,8 @@
 {%
   set classes = [
     'node',
+    'flex-column',
+    'd-flex',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -83,14 +85,27 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
+{% for item in content.field_image['#items'] %}
+  {% set image = {
+    '#theme':      'image_style',
+    '#style_name': 'wide',
+    '#uri':        item.entity.uri.value,
+    '#alt':        item.alt,
+    '#width':      item.width,
+    '#height':     item.height
+  } %}
+  {{ image }}
+{% endfor %}
+  {{ content.field_tags }}
+  {{ content.field_forums }}
+  {{ content.taxonomy_forums }}
+
+    {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
   {% endif %}
-  {{ title_suffix }}
-
   {% if display_submitted %}
     <footer class="node__meta">
       {{ author_picture }}
@@ -100,9 +115,7 @@
       </div>
     </footer>
   {% endif %}
-
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
-  </div>
-
+  {{ title_suffix }}
+  {{ content.body }}
+  {{ content|without('field_tags', 'body', 'field_image','taxonomy_forums') }}
 </article>

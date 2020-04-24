@@ -16087,6 +16087,35 @@ article.node .field--name-taxonomy-forums .field__items:last-child:after {
 } }
 
 /* ---------------------------------------------------------------------------*/
+/* MOBILE FIRST - content/_forum.scss                                       */
+/* ---------------------------------------------------------------------------*/
+.statistics-counter {
+  display: inline-block !important;
+  font-size: 90%;
+  color: #adb5bd;
+}
+.statistics-counter:before {
+  content: '';
+  margin-right: .5rem;
+  display: inline-block;
+  background-color: #adb5bd;
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+  width: 25px;
+  height: 25px;
+  -webkit-mask: url("../icon/eye-fill.svg");
+  mask: url("../icon/eye-fill.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+article .node__links li {
+  display: inline-block !important;
+}
+
+/* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - content/_book.scss                                       */
 /* ---------------------------------------------------------------------------*/
 .page-node-type-book .book-navigation .menu {
@@ -17726,11 +17755,104 @@ footer .region-footer-left .block ul li:before {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - page/_page-home.scss                                      */
 /* ---------------------------------------------------------------------------*/
-.path-frontpage .views-row:nth-of-type(n+2) {
-  margin-top: 2rem;
+.path-frontpage article.node > h2 {
+  margin-top: .5rem;
+}
+.path-frontpage article.node > h2:before {
+  -webkit-mask: url("../icon/file-text.svg");
+  mask: url("../icon/file-text.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: #33a1fd;
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-right: .25rem;
+}
+.path-frontpage article.node > h2:hover:before {
+  background-color: #027ce1;
+}
+
+.path-frontpage article.node--type-page > h2:before {
+  -webkit-mask: url("../icon/file.svg");
+  mask: url("../icon/file.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 20px;
+  height: 27px;
+}
+
+.path-frontpage article.node--type-article > h2:before {
+  -webkit-mask: url("../icon/file-text.svg");
+  mask: url("../icon/file-text.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 20px;
+  height: 27px;
+}
+
+.path-frontpage article.node--type-book > h2:before {
+  -webkit-mask: url("../icon/book.svg");
+  mask: url("../icon/book.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.path-frontpage article.node--type-forum > h2:before {
+  -webkit-mask: url("../icon/comment-fill.svg");
+  mask: url("../icon/comment-fill.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.path-frontpage .box-hp {
+  padding-bottom: 2rem;
+}
+
+.path-frontpage .box-hp:nth-of-type(n+3) article.node {
+  padding-top: 2rem;
   margin-left: 0;
-  border-top: 2px solid #ced4da;
-  padding-top: 1.5rem;
+  border-top: 1px solid #ced4da;
+}
+
+.path-frontpage article .node__links li {
+  font-size: 90%;
+}
+
+.path-frontpage .image-style-wide {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  margin-right: 0;
+}
+
+.path-frontpage .col-md-6 > article {
+  height: 100%;
+}
+
+.path-frontpage .col-md-6 > article {
+  height: 100%;
+}
+.path-frontpage .col-md-6 > article .field--name-body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.path-frontpage .col-md-6 > article .field--name-field-tags {
+  margin-top: 0;
+}
+
+.path-frontpage article.node .field--name-user-picture img[class*="image-style"] {
+  margin-bottom: 0;
+  margin-right: .5rem;
 }
 
 /* ---------------------------------------------------------------------------*/
