@@ -1,8 +1,8 @@
 BOOTSTRAP FOR DRUPAL
----------------
+============
 
 CONTENTS OF THIS FILE
----------------
+============
 
  * INTRODUCTION
  * NOTES
@@ -17,7 +17,7 @@ CONTENTS OF THIS FILE
  * REQUIREMENTS
 
 INTRODUCTION
-----------
+======
 
 This theme aims to provide users with **the best possible experience out
  of the box**, right after Drupal installation: All native Drupal blocks
@@ -27,26 +27,25 @@ This theme provides an advanced main navigation for desktop and mobile with a
 dynamic search bar, see it in action in the **animated gif on the right
 hand side**.
 It is a Bootstrap 4 base solution for developers with SCSS files provided.
-
-! ! Please contribute and
-[buy me a coffee](https://www.buymeacoffee.com/octogonedev) ! !
-
 This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
-[![Demo](assets/image/readme/demo-button.png)](https://bootstrap-for-drupal.octogone.dev/)
+[![Demo](assets/image/readme/demo-button.png)][7]
 
-### SCREENSHOT
+[![Support us by offering a coffee](assets/image/readme/support-button.png)][8]
+
+## SCREENSHOT
 ![Desktop](assets/image/readme/bootstrap-for-drupal-desktop-screenshot.jpg "screnshot")
 
 NOTES
---
+======
+
 * Windows Edge V18 is not supported (it does not support **mask** CSS
   properties)
 , only Edge +V79 is supported.
 * Bootstrap Tooltips, popover and modal might not work when logged in
 * This version is built with  Bootstrap v4.4.1
 
-### COMPARISON WITH THE MAIN THEMES BASED ON BOOTSTRAP
+## COMPARISON WITH THE MAIN THEMES BASED ON BOOTSTRAP
 
 [Bootstrap](https://www.drupal.org/project/bootstrap)  is based on Bootstrap 3,
 this theme on bootstrap 4.  It does not offer a "ready to use" solution as
@@ -60,9 +59,9 @@ only the Twig templates and SCSS files as this theme offers. It does not offer
 a "ready to use" solution as this theme does.
 
 FEATURES
------
+======
 
-### ADVANCED NAVIGATION:
+## ADVANCED NAVIGATION:
  * Sticky navbar - Admin Toolbar compatible
  * dynamic search bar
  * Animated dropdowns
@@ -74,43 +73,41 @@ FEATURES
 :-------------------------:|:-------------------------:
 ![Desktop Menu](assets/image/readme/bootstrap-for-drupal-menu-desktop.gif "Animated dropdown") | ![mobile menu](assets/image/readme/bootstrap-for-drupal-menu-mobile.gif "Mobile menu")
 
-### OTHERS
+## OTHERS
  * Responsive branding header with Logo, slogan and site name
  * Responsive footer and sub footer each with three regions
  * Aside content sticky with icon
  * All native pages are stylized
  * Multilingual support
  * Comments are stylized
- * Forums are stylized [Demo][5]
- * Books are stylized  [Demo][6]
+ * Forums are stylized [Demo][1]
+ * Books are stylized [Demo][2]
  * All forms are stylized
  * Print version
 
-[5]:(https://bootstrap-for-drupal.octogone.dev/forum)
-[6]:(https://bootstrap-for-drupal.octogone.dev/node/12)
-
 INSTALLATION
------------
+======
+
 Extract "Bootstrap for Drupal" theme folder into **/themes/contrib** of your
 [Drupal 8 installation](https://www.drupal.org/docs/8/install) and go to
 `/admin/appearance/settings` to set it as the **default theme**.
 
 CONFIGURATION
----------
+==========
 
 All native Drupal blocks and menus are placed and stylized right after
 installation and the website is immediately usable. You only have to create
  the content!
 
-### LOGO
+## LOGO
   The maximum height of the logo in the header is **40px**. To change the
   logo go to `/admin/appearance/settings/bootstrap_for_drupal` and un-tick
   **Use the logo supplied by the theme** to upload your own.
 
-### SLOGAN
+## SLOGAN
   The maximum length of the slogan is 256 characters
 
-### MULTILINGUAL SUPPORT
+## MULTILINGUAL SUPPORT
    To activate the language menu, go to the module page `/admin/modules` and
    activate the **language module** in the multilingual section. Go to
    `/admin/config/regional/language` to add a language. The language menu
@@ -118,7 +115,7 @@ installation and the website is immediately usable. You only have to create
    activation and the menu populated with the proper flags.
    **Configured language icons** : en, fr, de, it, es, nl, ru, pt-pt, pt-br.
 
-### LIST OF CONTACT TYPES (MAIL, PHONE, ETC..)
+## LIST OF CONTACT TYPES (MAIL, PHONE, ETC..)
    The first footer region is configured to contain a **list of contact types**
    (mail, phone, etc..); it will automatically add the icons to a list (ul).
    You have the possibility to copy the code provided in the **HTML** folder,
@@ -130,34 +127,34 @@ installation and the website is immediately usable. You only have to create
   * Phone
   * Address
 
-####  CREATE AND PLACE THE CUSTOM BLOCK
+###  CREATE AND PLACE THE CUSTOM BLOCK
   1. Create a block at `/admin/structure/block/block-content`
   2. Place the block at `/admin/structure/block` in the region
   **Footer - left box**.
 
-### SOCIAL ICON
+## SOCIAL ICON
    Social icon HTML code (svg) is provided in the **HTML** folder.
 
-### BOOTSTRAP MODAL
+## BOOTSTRAP MODAL
    Modal code is available **HTML** folder. Copy the
    **modal box** code to a custom block that you create with full html text
    format, and place the created block in the **modal region**. Specify the page
    where it is displayed in the block settings, DO NOT display the title of the
    block. Finally, copy the **modal button code** in the corresponding page.
 
-### VIEW CONTENT HITS
+## VIEW CONTENT HITS
 To display the view counter on the public website, you gtans permission to
 anonymous  to **View content hits** at the page
 `/admin/people/permissions`
 
 CREATE CONTENT
------
+======
 
-Visit the page [Administering a Drupal 8 site][4]
+Visit the page [Administering a Drupal 8 site][3]
 for more information. Note that the **text in the summary field** is the text
 used by the home page to list content.
 
-### MAIN NAVIGATION
+## MAIN NAVIGATION
 1. Create menu items in the main navigation: go to
  `/admin/structure/menu/manage/main`.
 2. Create a dropdown menu: create a child menu item by holding/sliding the
@@ -168,10 +165,8 @@ this is automatic. The first level link (the parent) will not be used.
 Bootstrap makes it the dropdown trigger automatically. Thus put in that
 link the target **#** - for example.
 
-[4]:(https://www.drupal.org/docs/8/administering-a-drupal-8-site/managing-content)
-
 BETTER ADMINISTRATION EXPERIENCE
------------------------
+========================
 
 The **Adminimal suite** is the ultimate administration theming solution for
 Drupal. You simply have to activate the modules to make it work! It makes
@@ -183,21 +178,17 @@ choose Adminimal.
 
 **List of modules to install:**
 
-* [Admin Toolbar][1]
-* [Adminimal Admin Toolbar][2]
-* [Adminimal theme][3]
-
-[1]:(https://www.drupal.org/project/admin_toolbar)
-[2]:(https://www.drupal.org/project/adminimal_admin_toolbar)
-[3]:(https://www.drupal.org/project/adminimal_theme)
+* [Admin Toolbar][4]
+* [Adminimal Admin Toolbar][5]
+* [Adminimal theme][6]
 
 SUGGESTED MODULES
--------------
+============
 
 This is a list of simple modules allowing you to greatly enhance the drupal
 user experience.
 
-### PATHAUTO
+## PATHAUTO
 
 [pathauto](https://www.drupal.org/project/pathauto) will automatically
 generate URL/path aliases for various kinds of content.
@@ -231,7 +222,7 @@ user
 
 `user/[user:account-name]`
 
-### FORM PLACEHOLDER
+## FORM PLACEHOLDER
   [form_placeholder](https://www.drupal.org/project/form_placeholder)
   transforms forms labels into placeholders. It makes the form
   clearer and more user friendly.
@@ -247,22 +238,22 @@ user
   #edit-pass
   #edit-comment-body-0-value
   ```
-### HONEYPOT
+## HONEYPOT
   [honeypot](https://www.drupal.org/project/honeypot)
   protect your form from spam without punishing the user with a captcha.
 
-### REDIRECT AFTER LOGIN
+## REDIRECT AFTER LOGIN
   [redirect_after_login](https://www.drupal.org/project/redirect_after_login)
   is a simple module allowing you to change the redirection to the user's page
   after login.
 
 
-### ALLOWED FORMATS
+## ALLOWED FORMATS
 [allowed_formats](https://www.drupal.org/project/allowed_formats) allow to
 remove the **text formats guidelines** below the forms.
 
 FOR DEVELOPERS
----------
+============
 
  * All SCSS files are provided
  * Custom bootstrap variables overwrite SCSS file
@@ -274,7 +265,7 @@ FOR DEVELOPERS
  * Gulp file is provided and SCCS files are configured to be built
    with node.js
 
-### BOOTSTRAP 4 FEATURES
+## BOOTSTRAP 4 FEATURES
   The theme is totally built with the Bootstrap grid system and maximum usage
    of bootstrap classes.
 
@@ -286,7 +277,7 @@ FOR DEVELOPERS
   * form (custom style) : submit, input, checkbox, select, radio, textfield
 
 FUTUR DEVELOPEMENT
--------------
+============
 
 * Error 403/404 page
 * Multi-color / font combinations in the theme configuration with one click
@@ -303,6 +294,15 @@ FUTUR DEVELOPEMENT
   - All Drupal languages / flags supported for the language selection menu
 
 REQUIREMENTS
---------
+======
 
 No requirements.
+
+[1]:https://bootstrap-for-drupal.octogone.dev/forum
+[2]:https://bootstrap-for-drupal.octogone.dev/node/12
+[3]:https://www.drupal.org/docs/8/administering-a-drupal-8-site/managing-content
+[4]:https://www.drupal.org/project/admin_toolbar
+[5]:https://www.drupal.org/project/adminimal_admin_toolbar
+[6]:https://www.drupal.org/project/adminimal_theme
+[7]:https://bootstrap-for-drupal.octogone.dev/
+[8]:https://www.buymeacoffee.com/octogonedev
