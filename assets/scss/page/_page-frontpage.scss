@@ -101,12 +101,14 @@
   }
 }
 
-/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP
+/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP 
 @include media-breakpoint-up(md) {
-  .box-hp {
-    padding-bottom: 3rem;
-  }
-  .box-hp:nth-of-type(n+3) article.node {
-    padding-top: 3.5rem;
+  .path-frontpage {
+    .box-hp {
+      padding-bottom: 3rem;
+    }
+    .box-hp:nth-of-type(n+3) article.node {
+      padding-top: 3rem;
+    }
   }
 }

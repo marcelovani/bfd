@@ -17860,11 +17860,11 @@ footer .region-footer-left .block ul li:before {
 }
 
 @media (min-width: 768px) {
-  .box-hp {
+  .path-frontpage .box-hp {
     padding-bottom: 3rem;
 }
-  .box-hp:nth-of-type(n+3) article.node {
-    padding-top: 3.5rem;
+  .path-frontpage .box-hp:nth-of-type(n+3) article.node {
+    padding-top: 3rem;
 } }
 
 /* ---------------------------------------------------------------------------*/
