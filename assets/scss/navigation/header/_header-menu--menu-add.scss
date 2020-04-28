@@ -40,13 +40,13 @@
       // icons
       &[href*='user'] {
         &:before {
-          mask     : url('../icon/user-1.svg');
+          mask     : url('../icon/user.svg');
           mask-size: cover;
         }
       }
       &[href*='user/login'] {
         &:before {
-          mask     : url('../icon/login.svg');
+          mask     : url('../icon/user.svg');
           mask-size: cover;
         }
       }

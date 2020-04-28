@@ -22,5 +22,5 @@ regions:
   footer_right: 'Footer - right box'
   footer_sub_left: 'Footer sub - left box'
   footer_sub_center: 'Footer sub - center box'
-  footer_sub_right: 'Footer sub - left box'
+  footer_sub_right: 'Footer sub - right box'
   modal_container: 'Modal box container'

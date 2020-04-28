@@ -19,6 +19,8 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ======
 
+This project aims to provide a Drupal theme fully integrated into [Bootstrap 4][9].
+
 This theme aims to provide users with **the best possible experience out
  of the box**, right after Drupal installation: All native Drupal blocks
   and menus are placed and stylized along with all native pages and forms.
@@ -40,7 +42,9 @@ This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 NOTES
 ======
 
-**Before updating from 8.x-1.x to 8.x-2.x., create an image style named "wide" (600x200, scale and crop). Or Uninstall and reinstall the theme - but that way you will have to replace the blocks.**
+**Before updating from 8.x-1.x to 8.x-2.x., create an image style named "wide"
+(600x200, scale and crop). Or update and Uninstall and reinstall the theme
+but that way you will have to replace the blocks.**
 
 * Windows Edge V18 is not supported (it does not support **mask** CSS
   properties)
@@ -64,12 +68,12 @@ a "ready to use" solution as this theme does.
 FEATURES
 ======
 
-## ADVANCED NAVIGATION:
+## ADVANCED NAVIGATION
  * Sticky navbar - Admin Toolbar compatible
  * dynamic search bar
  * Animated dropdowns
  * mobile menu with smooth opening
- * Icons for: user menu, contact, language menu
+ *  Icons for: account, contact, language menu, email, login/logout
  * Language menu with flag (fr, en, es, de, nl, it, pt-pt, pt-br, ru)
 
  Desktop Menu            |  Mobile menu
@@ -79,11 +83,11 @@ FEATURES
 ## OTHERS
  * Responsive branding header with Logo, slogan and site name
  * Responsive footer and sub footer each with three regions
- * Aside content sticky with icon
+ * Aside column sticky
  * All native pages are stylized
  * Multilingual support
  * Comments are stylized
- * Forums are stylized [Demo][1]
+ * Forums are stylized [Demo][1] and responsive
  * Books are stylized [Demo][2]
  * All forms are stylized
  * Print version
@@ -109,6 +113,10 @@ installation and the website is immediately usable. You only have to create
 
 ## SLOGAN
   The maximum length of the slogan is 256 characters
+
+## HOME PAGE
+  The image style of the content type article indexed in the frontpage is
+  defined is the twig template `node--view--frontpage.html.twig`.  
 
 ## MULTILINGUAL SUPPORT
    To activate the language menu, go to the module page `/admin/modules` and
@@ -145,10 +153,14 @@ installation and the website is immediately usable. You only have to create
    where it is displayed in the block settings, DO NOT display the title of the
    block. Finally, copy the **modal button code** in the corresponding page.
 
+## ERROR 403 & 404 PAGE
+Find the HTML code for those page in the HTML folder. You should desactivate the
+display of the block title for those page.
+
 ## VIEW CONTENT HITS
-To display the view counter on the public website, you gtans permission to
-anonymous  to **View content hits** at the page
-`/admin/people/permissions`
+To display the view counter on the public website, you have to activate the
+**core** module statistics at `/admin/modules` and grant permission to
+anonymous to **View content hits** at the page`/admin/people/permissions`.
 
 CREATE CONTENT
 ======
@@ -241,6 +253,12 @@ user
   #edit-pass
   #edit-comment-body-0-value
   ```
+
+## FOCAL POINT
+[Focal point](https://www.drupal.org/project/focal_point) allows you to
+specify the portion of an image that is most important. This information can
+be used when the image is cropped or cropped and scaled.
+
 ## HONEYPOT
   [honeypot](https://www.drupal.org/project/honeypot)
   protect your form from spam without punishing the user with a captcha.
@@ -309,3 +327,4 @@ No requirements.
 [6]:https://www.drupal.org/project/adminimal_theme
 [7]:https://bootstrap-for-drupal.octogone.dev/
 [8]:https://www.buymeacoffee.com/octogonedev
+[9]:https://getbootstrap.com/

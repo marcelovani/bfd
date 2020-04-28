@@ -11,11 +11,11 @@
       text-decoration: none;
     }
     // contextual link reset
-    #block-bootstrap-for-drupal-search-form.contextual-region {
+    .contextual-region {
       position: inherit;
     }
     position : relative;
-    #block-bootstrap-for-drupal-main-navigation {
+    .menu--main {
       width: 100%;
     }
     font-size: 1rem;
@@ -130,7 +130,7 @@
   //////////////////////////////////////////////////////////////////////////////
   // [ COMMON]
   #menu-main {
-    #block-bootstrap-for-drupal-main-navigation {
+    .menu--main {
       width: auto;
     }
     .nav-item {
@@ -173,7 +173,7 @@
     }
 
     // [ BORDER BOTTOM ANIMATION ]
-    .nav-item a {
+    a.nav-item {
       position: relative;
       &:before {
         content           : '';
@@ -189,7 +189,7 @@
         transition        : all .3s ease-in-out 0s;
       }
     }
-    .nav-item a:not(.is-active) {
+    a.nav-item:not(.is-active) {
       &:before {
         visibility: hidden;
       }
@@ -199,7 +199,7 @@
         transform        : scaleX(1);
       }
     }
-    .nav-item a.is-active {
+    a.nav-item.is-active {
       &:before {
         visibility       : visible;
         -webkit-transform: scaleX(1);

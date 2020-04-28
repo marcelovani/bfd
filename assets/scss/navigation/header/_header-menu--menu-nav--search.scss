@@ -20,7 +20,7 @@
 
   ////////////////////////////////////////////////////////////////////////////
   // [ MAIN NAVIGATION - SEARCH ]
-  #block-bootstrap-for-drupal-search-form {
+  .block-search {
     overflow     : hidden;
     #search-block-form {
       position: relative;
@@ -84,7 +84,7 @@
   //////////////////////////////////////////////////////////////////////////////
   // [ MAIN NAVIGATION - SEARCH ]
   #menu-main {
-    #block-bootstrap-for-drupal-search-form {
+    .block-search {
       width        : auto;
       border-bottom: none;
       border-top   : none;

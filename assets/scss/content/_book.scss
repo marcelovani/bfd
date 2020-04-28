@@ -9,6 +9,14 @@
   // [ COMMON ]
   .page-node-type-book {
 
+    .book-pager__item a {
+      white-space  : nowrap;
+      overflow     : hidden;
+      text-overflow: ellipsis;
+      max-width    : 250px;
+      display      : inline-block;
+
+    }
     //hierarchie
     .book-navigation {
       .menu {
