@@ -9,7 +9,8 @@
   // [ COMMON ]
   .page-node-type-book {
 
-    .book-pager__item a {
+    .book-pager__item--next a,
+    .book-pager__item--previous a {
       white-space  : nowrap;
       overflow     : hidden;
       text-overflow: ellipsis;

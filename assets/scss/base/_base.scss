@@ -17,9 +17,12 @@
   }
   // [ MIXINS ]
   #{headings(1, 6)} {
+    color: $secondary;
     a {
       text-decoration-line: none;
+      color               : $secondary;
       &:hover {
+        color               : lighten($secondary, 15%);
         text-decoration-line: none;
       }
     }

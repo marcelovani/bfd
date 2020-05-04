@@ -19,7 +19,8 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ======
 
-This project aims to provide a Drupal theme fully integrated into [Bootstrap 4][9].
+This project aims to provide a pragmatic Drupal theme fully integrated
+into [Bootstrap 4][9].
 
 This theme aims to provide users with **the best possible experience out
  of the box**, right after Drupal installation: All native Drupal blocks
@@ -42,14 +43,13 @@ This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 NOTES
 ======
 
-**Before updating from 8.x-1.x to 8.x-2.x., create an image style named "wide"
-(600x200, scale and crop). Or update and Uninstall and reinstall the theme
-but that way you will have to replace the blocks.**
+**To avoid error screen : Before updating from 8.x-1.x to 8.x-2.x., create an
+image style named "wide" (600x200, scale and crop). Or Uninstall the theme, 
+update it and reinstall it - but that way you will have to replace blocks.**
 
 * Windows Edge V18 is not supported (it does not support **mask** CSS
-  properties)
-, only Edge +V79 is supported.
-* Bootstrap Tooltips, popover and modal might not work when logged in
+  properties), only Edge +V79 is supported;
+* Bootstrap Tooltips and popover do not work when logged in;
 * This version is built with  Bootstrap v4.4.1
 
 ## COMPARISON WITH THE MAIN THEMES BASED ON BOOTSTRAP
@@ -154,8 +154,7 @@ installation and the website is immediately usable. You only have to create
    block. Finally, copy the **modal button code** in the corresponding page.
 
 ## ERROR 403 & 404 PAGE
-Find the HTML code for those page in the HTML folder. You should desactivate the
-display of the block title for those page.
+Find the HTML code for those page in the HTML folder.
 
 ## VIEW CONTENT HITS
 To display the view counter on the public website, you have to activate the
