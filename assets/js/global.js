@@ -3,12 +3,12 @@
   // //////////////////////////////////////////////////////////////////////////////
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
   $(() => {
-      if (window.matchMedia('(max-width: 768px)').matches) {
+    if (window.matchMedia('(max-width: 768px)').matches) {
         $('#language-selector').addClass('dropup');
       }
-      else {
+    else {
         $('#language-selector').removeClass('dropup');
-      };
+      }
   });
 
   // //////////////////////////////////////////////////////////////////////////////
