@@ -4,11 +4,11 @@
   // [ DROPDOWN LANGUAGE MENU MOBILE ]
   $(() => {
     if (window.matchMedia('(max-width: 768px)').matches) {
-        $('#language-selector').addClass('dropup');
-      }
+      $('#language-selector').addClass('dropup');
+    }
     else {
-        $('#language-selector').removeClass('dropup');
-      }
+      $('#language-selector').removeClass('dropup');
+    }
   });
 
   // //////////////////////////////////////////////////////////////////////////////
