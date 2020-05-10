@@ -1,0 +1,29 @@
+/* ---------------------------------------------------------------------------*/
+/* ADMINIMAL THEME CUSTOM.SCSS                                                */
+/* ---------------------------------------------------------------------------*/
+
+/* toolbar bar */
+.adminimal .toolbar .toolbar-bar {
+  background-color: #222733;
+}
+
+/* toolbar tray */
+.adminimal .toolbar .toolbar-bar .toolbar-tab > .toolbar-item.is-active,
+.adminimal .toolbar .toolbar-bar .toolbar-tab > .toolbar-item:focus,
+.adminimal .toolbar .toolbar-toggle-orientation,
+.adminimal .toolbar .toolbar-tray,
+.adminimal-admin-toolbar .toolbar-tray .toolbar-menu li {
+  background-color: #2d3342;
+}
+
+/* page title */
+.adminimal .content-header {
+  background-color: #373F51;
+}
+
+/* Hover / active link */
+.adminimal .toolbar .toolbar-bar .toolbar-tab:not(.workspaces-toolbar-tab) > .toolbar-item:hover,
+.adminimal .toolbar .toolbar-menu .toolbar-menu a.is-active,
+.adminimal .toolbar .toolbar-menu a:hover {
+  background-color: #33a1fd;
+}

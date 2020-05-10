@@ -17974,6 +17974,12 @@ ol.breadcrumb .breadcrumb-item {
   margin-top: 0;
   margin-bottom: 1.5rem;
   margin-right: 0;
+  min-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 150px;
+  -o-object-position: 0 50%;
+  object-position: 0 50%;
 }
 
 .path-frontpage .col-md-6 > article {
@@ -17992,6 +17998,9 @@ ol.breadcrumb .breadcrumb-item {
 }
 .path-frontpage .col-md-6 > article .field--name-field-tags {
   margin-top: 0;
+}
+.path-frontpage .col-md-6 > article .node__links {
+  margin-left: .5rem;
 }
 
 .path-frontpage article.node .field--name-user-picture img[class*="image-style"] {

@@ -44,7 +44,7 @@ NOTES
 ======
 
 **To avoid error screen : Before updating from 8.x-1.x to 8.x-2.x., create an
-image style named "wide" (600x200, scale and crop). Or Uninstall the theme, 
+image style named "wide" (600x200, scale and crop). Or Uninstall the theme,
 update it and reinstall it - but that way you will have to replace blocks.**
 
 * Windows Edge V18 is not supported (it does not support **mask** CSS
@@ -190,6 +190,11 @@ one or both of the admin bars are active, in desktop or mobile screen.	Go to
 `/admin/appearance` and in the **Administration theme** (end of the page)
 choose Adminimal.
 
+In **ressources/css** there is a **adminimal-custom.css** that match the
+color scheme of this theme. To use it copy it in **files** folder and tick
+"Use adminimal-custom.css" in `/admin/appearance/settings/adminimal_theme`.
+This is anative feature the Adminimal theme. 
+
 **List of modules to install:**
 
 * [Admin Toolbar][4]
@@ -299,7 +304,6 @@ FOR DEVELOPERS
 FUTUR DEVELOPEMENT
 ============
 
-* Error 403/404 page
 * Multi-color / font combinations in the theme configuration with one click
 (in same layout).
 * Drupal 9 porting.

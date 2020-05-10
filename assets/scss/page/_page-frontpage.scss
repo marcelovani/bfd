@@ -73,9 +73,13 @@
       font-size: 90%;
     }
     .image-style-wide {
-      margin-top   : 0;
-      margin-bottom: 1.5rem;
-      margin-right : 0;
+      margin-top     : 0;
+      margin-bottom  : 1.5rem;
+      margin-right   : 0;
+      min-width      : 100%;
+      object-fit     : cover;
+      max-height     : 150px;
+      object-position: 0 50%;
     }
     .col-md-6 > article {
       height: 100%;
@@ -90,7 +94,9 @@
       .field--name-field-tags {
         margin-top: 0;
       }
-      .node__links {}
+      .node__links {
+        margin-left: .5rem;
+      }
     }
 
     //user image
@@ -101,7 +107,7 @@
   }
 }
 
-/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP 
+/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP
 @include media-breakpoint-up(md) {
   .path-frontpage {
     .box-hp {
