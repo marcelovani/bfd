@@ -193,7 +193,7 @@ choose Adminimal.
 In **ressources/css** there is a **adminimal-custom.css** that match the
 color scheme of this theme. To use it copy it in **files** folder and tick
 "Use adminimal-custom.css" in `/admin/appearance/settings/adminimal_theme`.
-This is a native feature of the Adminimal theme. 
+This is a native feature of the Adminimal theme.
 
 **List of modules to install:**
 

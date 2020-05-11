@@ -16810,6 +16810,35 @@ select {
 }
 
 /* ---------------------------------------------------------------------------*/
+/* ADMINIMAL THEME CUSTOM.SCSS                                                */
+/* ---------------------------------------------------------------------------*/
+/* toolbar bar */
+.adminimal-admin-toolbar .toolbar .toolbar-bar {
+  background-color: #222733;
+}
+
+/* toolbar tray */
+.adminimal-admin-toolbar .toolbar .toolbar-bar .toolbar-tab > .toolbar-item.is-active,
+.adminimal-admin-toolbar .toolbar .toolbar-bar .toolbar-tab > .toolbar-item:focus,
+.adminimal-admin-toolbar .toolbar .toolbar-toggle-orientation,
+.adminimal-admin-toolbar .toolbar .toolbar-tray,
+.adminimal-admin-toolbar .toolbar-tray .toolbar-menu li {
+  background-color: #2d3342;
+}
+
+/* page title */
+.adminimal-admin-toolbar .content-header {
+  background-color: #373f51;
+}
+
+/* Hover / active link */
+.adminimal-admin-toolbar .toolbar .toolbar-bar .toolbar-tab:not(.workspaces-toolbar-tab) > .toolbar-item:hover,
+.adminimal-admin-toolbar .toolbar .toolbar-menu .toolbar-menu a.is-active,
+.adminimal-admin-toolbar .toolbar .toolbar-menu a:hover {
+  background-color: #33a1fd;
+}
+
+/* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - drupal/module/_alert-message.scss                           */
 /* ---------------------------------------------------------------------------*/
 #toolbar-administration,
