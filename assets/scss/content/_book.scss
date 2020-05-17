@@ -14,7 +14,7 @@
       white-space  : nowrap;
       overflow     : hidden;
       text-overflow: ellipsis;
-      max-width    : 250px;
+      max-width    : 100px;
       display      : inline-block;
 
     }
@@ -182,6 +182,19 @@
           }
         }
       }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////// BREAKPOINT MEDIUM UP
+@include media-breakpoint-up(md) {
+  //////////////////////////////////////////////////////////////////////////////
+  // [ COMMON ]
+  .page-node-type-book {
+    .book-pager__item--next a,
+    .book-pager__item--previous a {
+      max-width: 250px;
+
     }
   }
 }

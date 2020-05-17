@@ -6,7 +6,7 @@
 @include media-breakpoint-up(xs) {
   //////////////////////////////////////////////////////////////////////////////
   // [ COMMON ]
-  .path-search {
+  .path-search #page-content {
     .item-list > h3 {
       color     : $danger;
       margin-top: 1rem;
@@ -52,7 +52,7 @@
         width           : 50px;
         height          : 50px;
         display         : inline-block;
-        background-color: $gray-600;
+        background-color: $secondary;
         transition      : $transition-base;
         margin-right    : .5rem;
         transform       : translateY(10px);
@@ -65,7 +65,7 @@
       margin-bottom: 3rem;
     }
     h2 {
-      color : $gray-600;
+      color : $secondary;
       margin: 1rem 0;
     }
     .search-results {
@@ -82,13 +82,6 @@
     .search-result__info {
       font-size: 90%;
       color    : $gray-500;
-      a {
-        color     : lighten($primary,20%);
-        transition: $transition-base;
-        &:hover {
-          color: lighten($primary,10%);
-        }
-      }
     }
   }
 }

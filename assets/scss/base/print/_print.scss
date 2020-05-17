@@ -28,6 +28,14 @@
     #comment-form {
       display: none;
     }
+    //statistics counter
+    .node__links li.statistics-counter {
+      visibility: hidden !important;
+    }
+    // icon header frontpage
+    .path-frontpage article.node > h2::before {
+      content: none;
+    }
     // header link
     h1 a,
     h2 a,
