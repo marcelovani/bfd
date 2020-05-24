@@ -317,7 +317,11 @@ FUTUR DEVELOPEMENT
 * Drupal 9 porting.
 
 ## DISTRIBUTION
-A payed distribution will be soon available with a editing system that integrate the powerfull **paragraph** and **entity browser** component: full spectrum of content and multimedia content can be added with a couple of clicks in the edit form. Javascript features . Development is currently **ongoing**, link to distribution will be available soon.</p>
+A payed distribution will be soon available with a editing system that
+integrate the powerfull **paragraph** and **entity browser** component:
+full spectrum of content and multimedia content can be added with a couple
+of clicks in the edit form. Javascript features . Development is currently
+**ongoing**, link to distribution will be available soon.</p>
 
 ### Features
 * Complete list of HTML typography tags stylized in a template page
@@ -325,14 +329,23 @@ A payed distribution will be soon available with a editing system that integrate
 * Up / down scroll button (javascript)
 * Paragraph components/entity browser
   - Edit form: Paragraph **BS4 components**: tabs, carousel, accordion.
-  - Edit form: Paragraph **BS4 gallery**: this gallery is build only with BS4 components
-  - Edit form: Paragraph **video components**: mediaelement.js player with playlist: mp4, ogg, webm.  Browsing via entity browser Can be mixed with remote video
-  - Edit form: Paragraph **remote video components**: mediaelement.js player with playlist: youtube, vimeo, daylimotion + M(PEG)-DASH, HLS stream.  Browsing via entity browser. Can be mixed with local video
-  - Edit form: Paragraph **audio components**: mediaelement.js  player with playlist: mp3, flac, aac, ogg.  Browsing  via entity browser
-  - Edit form: Paragraph **content components** allowing embed of content (BS4 card display) into the content type.  Browsing via entity browser
-  - Edit form: Paragraph **social media components** allowing embed of twitter, facebook, instagram.
+  - Edit form: Paragraph **BS4 gallery**: this gallery is build only with
+  BS4 components
+  - Edit form: Paragraph **video components**: mediaelement.js player with
+  playlist: mp4, ogg, webm.  Browsing via entity browser Can be mixed with
+  remote video
+  - Edit form: Paragraph **remote video components**: mediaelement.js player
+  with playlist: youtube, vimeo, daylimotion + M(PEG)-DASH, HLS stream.
+  Browsing via entity browser. Can be mixed with local video
+  - Edit form: Paragraph **audio components**: mediaelement.js  player with
+  playlist: mp3, flac, aac, ogg.  Browsing  via entity browser
+  - Edit form: Paragraph **content components** allowing embed of content
+  (BS4 card display) into the content type.  Browsing via entity browser
+  - Edit form: Paragraph **social media components** allowing embed of
+  twitter, facebook, instagram.
   - Edit form: Paragraph **document components** Browsing via entity browser
-  - Edit form: Paragraph **HTML table components** allowing  building of advanced tables
+  - Edit form: Paragraph **HTML table components** allowing  building of
+  advanced tables
 * Mailchimp integration
 * Notification system
 * Pre-configured roles

@@ -32,12 +32,12 @@
         .stop()
         .animate(
           {
-            scrollTop: $target.offset().top - 70
-          }, // set offset value here
+            scrollTop: $target.offset().top - 150
+          }, // set offset value here i.e. 50
           100,
           "swing",
           () => {
-            window.location.hash = target - 70;
+            window.location.hash = target - 80;
           }
         );
     }
