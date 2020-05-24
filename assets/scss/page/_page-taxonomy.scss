@@ -8,6 +8,9 @@
   // [ COMMON ]
   .path-taxonomy {
 
+    article.node .text-formatted {
+      text-align: justify;
+    }
     .views-row:nth-of-type(n+2) {
       margin-top : 2rem;
       margin-left: 0;
@@ -24,7 +27,7 @@
         width           : 40px;
         height          : 40px;
         display         : inline-block;
-        background-color: $gray-600;
+        background-color: $secondary;
         margin-right    : 1rem;
       }
     }

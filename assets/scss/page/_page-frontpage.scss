@@ -10,6 +10,7 @@
   .path-frontpage {
     article.node > h2 {
       margin-top: .5rem;
+
       &:before {
         mask            : url('../icon/file-text.svg');
         mask-size       : cover;
@@ -30,6 +31,9 @@
       }
     }
 
+    article.node .text-formatted {
+      text-align: justify;
+    }
     article.node--type-page > h2 {
       &:before {
         mask     : url('../icon/file.svg');
@@ -72,9 +76,9 @@
     article .node__links li {
       font-size: 90%;
     }
-    .image-style-wide {
+    article.node .image-style-wide {
       margin-top     : 0;
-      margin-bottom  : 1.5rem;
+      margin-bottom  : 1rem;
       margin-right   : 0;
       min-width      : 100%;
       object-fit     : cover;

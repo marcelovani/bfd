@@ -8,34 +8,54 @@
     scroll-behavior: smooth;
   }
 
-  //////////////////////////////////////////////////////////////////////////////
-  // [ PAGE CONTENT SPECIFIC ]
+  ::selection {
+    background: $primary;
+    color     : white;
+  }
+  /* The emerging W3C standard
+       that is currently Firefox-only */
+  * {
+    scrollbar-color: $primary transparent;
+  }
 
-  #page-content {
-    ////////////////////////////////////////////////////////////////////////////
-    // [ DETAILS ]
-    details {
-      padding: 0 .5rem;
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius   : 0;
+    border          : 3px solid transparent;
+  }
+
+  // [ DETAILS ]
+  details {
+    padding: 0 1rem;
+    summary {
+      margin-left: -1rem;
     }
-    // [ MIXINS ]
-    #{headings(1, 6)} {
-      color: $secondary;
-      a {
+  }
+  // [ HEADERS MIXINS ]
+  #{headings(1, 6)} {
+    color: $secondary;
+    a {
+      text-decoration-line: none;
+      color               : $secondary;
+      &:hover {
+        color               : lighten($secondary, 15%);
         text-decoration-line: none;
-        color               : $secondary;
-        &:hover {
-          color               : lighten($secondary, 15%);
-          text-decoration-line: none;
-        }
       }
     }
-    ////////////////////////////////////////////////////////////////////////////
-    // [ LINK ]
-    a {
-      transition: $transition-base;
-    }
-
   }
+  ////////////////////////////////////////////////////////////////////////////
+  // [ LINK ]
+  a {
+    transition: $transition-base;
+  }
+
 }
 //////////////////////////////////////////////////////////// BREAKPOINT SMALL UP
 @include media-breakpoint-up(sm) {
