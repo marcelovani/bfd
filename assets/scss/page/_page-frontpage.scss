@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------------------------*/
-/* MOBILE FIRST - page/_page-home.scss                                      */
+/* MOBILE FIRST - page/_page-frontpage.scss                                      */
 /* ---------------------------------------------------------------------------*/
 @charset "UTF-8";
 ////////////////////////////////////////////////////// BREAKPOINT EXTRA SMALL UP
@@ -8,6 +8,10 @@
   // [ COMMON ]
 
   .path-frontpage {
+    // node sticky
+    article.node--sticky img {
+      border: 5px solid $yellow;
+    }
     article.node > h2 {
       margin-top: .5rem;
 
