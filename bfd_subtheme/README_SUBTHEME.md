@@ -5,8 +5,8 @@ Copy the `bfd_subtheme` folder to `/sites/themes/custom` folder and set it as
 default theme.
 
 If you are using a multisites Drupal instance you have to copy the
-"Bootstrap for drupal" base theme to your site specific folder or
-change the the relative path in the SCSS master file -
+"Bootstrap for drupal" base theme to your site specific folder `/themes/contrib`
+or change the the relative path in the SCSS master file -
 `bfd_subtheme/assets/scss/style.scss`.
 
 SUBTHEME USAGE
