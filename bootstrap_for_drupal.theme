@@ -30,3 +30,40 @@ function bootstrap_for_drupal_preprocess_input(&$variables) {
 function bootstrap_for_drupal_preprocess_textarea(&$variables) {
   $variables['attributes']['class'][] = 'form-control';
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for erro page 403 & 404.
+ */
+function bootstrap_for_drupal_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+  $path_args = explode('/', trim(\Drupal::service('path.current')->getPath(), '/'));
+  $suggestions = theme_get_suggestions($path_args, 'page');
+  $http_error_suggestions = [
+    'system.401' => 'page__401',
+    'system.403' => 'page__403',
+    'system.404' => 'page__404',
+  ];
+
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if (isset($http_error_suggestions[$route_name])) {
+    $suggestions[] = $http_error_suggestions[$route_name];
+  }
+
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
+  }
+}
+
+/**
+ * Implements theme suggestion for form by ID.
+ */
+function bootstrap_for_drupal_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  // Add template suggestion based on form ID.
+  $suggestions[] = 'form__' . $variables['element']['#form_id'];
+  // Add template suggestion based on form ID and parent comment ID.
+  if ($pid = \Drupal::routeMatch()->getParameter('pid')) {
+    $suggestions[] = 'form__' . $variables['element']['#form_id'] . '__reply';
+    $suggestions[] = 'form__' . $variables['element']['#form_id'] . '__reply__' . $pid;
+  }
+}
