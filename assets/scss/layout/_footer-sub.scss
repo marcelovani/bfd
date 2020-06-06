@@ -21,13 +21,16 @@
       margin-left: -40px;
     }
     a[href="https://www.drupal.org"] {
+      &:hover {
+        color: #7cbc48;
+      }
       &:after {
         content         : '';
         display         : inline-block;
         width           : 30px;
         height          : 35px;
         margin-left     : .75rem;
-        mask            : url('../icon/logo-drupal-8.svg');
+        mask            : url('../icon/logo-drupal.svg');
         mask-size       : contain;
         mask-repeat     : no-repeat;
         background-color: white;
@@ -37,7 +40,7 @@
         bottom          : 3px;
       }
       &:hover:after {
-        background-color: darken($white, 15%);
+        background-color: #7cbc48;
       }
     }
     // windows Edge V18 dont support mask attribute

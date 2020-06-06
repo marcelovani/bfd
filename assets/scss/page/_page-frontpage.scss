@@ -9,7 +9,7 @@
 
   .path-frontpage {
     // node sticky
-    article.node--sticky img {
+    article.node--sticky img.image-style-wide {
       border: 5px solid $yellow;
     }
     article.node > h2 {

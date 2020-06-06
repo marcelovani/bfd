@@ -12,6 +12,7 @@ CONTENTS OF THIS FILE
  * CREATE CONTENT
  * BETTER ADMINISTRATION EXPERIENCE
  * SUGGESTED MODULES
+ * CUSTOMIZING
  * FOR DEVELOPERS
  * FUTUR DEVELOPMENTS
  * REQUIREMENTS
@@ -153,9 +154,6 @@ installation and the website is immediately usable. You only have to create
    where it is displayed in the block settings, DO NOT display the title of the
    block. Finally, copy the **modal button code** in the corresponding page.
 
-## ERROR 403 & 404 PAGE
-Find the HTML code for those page in the HTML folder.
-
 ## VIEW CONTENT HITS
 To display the view counter on the public website, you have to activate the
 **core** module statistics at `/admin/modules` and grant permission to
@@ -277,19 +275,48 @@ be used when the image is cropped or cropped and scaled.
 [allowed_formats](https://www.drupal.org/project/allowed_formats) allow to
 remove the **text formats guidelines** below the forms.
 
+CUSTOMIZING
+============
+In this theme there is tools for you to customize this theme with and
+whitout subtheme.
+
+## WITH SUBTHEME
+Copy the `bfd_subtheme` folder to `/sites/themes/custom` folder and set it as
+`default theme`.
+
+### CSS
+There is a CSS file at `bfd_subtheme/assets/css/style-custom.css` for you to
+add your custom CSS
+
+### SCSS
+You can theme with SCSS by adding SCSS files to the master theme SCSS file
+`bfd_subtheme/assets/scss/tools/_subtheme.scss`. Gulp file is provided to
+compile SCSS but you will have to install node.js modules.
+
+#### Note
+If you are using a multisites Drupal instance you have also to copy the
+`Bootstrap for drupal` base theme to your site specific folder or change the
+relative path in the SCSS master file - `bfd_subtheme/assets/scss/style.scss`.
+
+## WITHOUT SUBTHEME
+
+### CSS
+There is a CSS file at `assets/css/style-custom.css` for you to add your
+custom CSS rules.
+
+### SCSS
+There is a SCSS template folder for you to add your custom CSS without subtheme.
+Find in `assets/scss/tools` a `custom` folder, copy it to `assets/scss/`
+and in the bottom of the file `assets/scss/style.scss` uncomment the line
+`@import 'custom/include`. **After updating the theme** dont forget to
+uncomment that line again. Gulp file is provided to
+compile SCSS but you will have to install node.js modules.
+
 FOR DEVELOPERS
 ============
 
  * All SCSS files are provided
  * Custom bootstrap variables overwrite SCSS file
-
-## CUSTOM SCSS
-There is a SCSS template for you to add your custom CSS easily. Find in
-`assets/scss/tools` a `custom` folder, copy it to `assets/scss/`
-and in the bottom of the file `assets/scss/style.scss` uncomment the line
-`@import 'custom/include'`. **After updating the theme dont forget to
-uncomment that line again**.
-
  * Only SVG icons with mask attribute are used, allowing for:
    color/size/position/transition with CSS. Note that **mask** CSS
    properties are not supported by Edge V18. No use of icon frameworks
@@ -321,7 +348,7 @@ A payed distribution will be soon available with a editing system that
 integrate the powerfull **paragraph** and **entity browser** component:
 full spectrum of content and multimedia content can be added with a couple
 of clicks in the edit form. Javascript features . Development is currently
-**ongoing**, link to distribution will be available soon.</p>
+**ongoing**, link to distribution will be available soon.
 
 ### Features
 * Complete list of HTML typography tags stylized in a template page
@@ -342,8 +369,10 @@ of clicks in the edit form. Javascript features . Development is currently
   - Edit form: Paragraph **content components** allowing embed of content
   (BS4 card display) into the content type.  Browsing via entity browser
   - Edit form: Paragraph **social media components** allowing embed of
-  twitter, facebook, instagram.
+  twitter, facebook, instagram mixed in a masonry style.
   - Edit form: Paragraph **document components** Browsing via entity browser
+  - Edit form: Paragraph **Link components** with custom thumbnails and
+  description
   - Edit form: Paragraph **HTML table components** allowing  building of
   advanced tables
 * Mailchimp integration

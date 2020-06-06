@@ -3,6 +3,7 @@ global-styling:
   css:
     theme:
       assets/css/style.css: {}
+      assets/css/style-custom.css: {}
       //fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap: {}
   js:
     /core/assets/vendor/popperjs/popper.min.js: {}

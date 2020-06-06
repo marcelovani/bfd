@@ -10,7 +10,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], () => {
   browserSync.init({
-    proxy: 'http://d8-composer.dev'
+    proxy: 'http://YouRDevUrL'
   });
 
   gulp

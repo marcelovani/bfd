@@ -1,0 +1,29 @@
+// ---------------------------------------------------------------------------//
+// MOBILE FIRST - MASTER FILE                                                 //
+// ---------------------------------------------------------------------------//
+@charset "UTF-8";
+
+// NOTE:
+// You might need to change the relative path in this file if you dont put the subtheme in /sites/themes/custom.
+
+// THEME VARIABLE
+@import "../../../../contrib/bfd/assets/scss/tools/variable";
+
+// SUBTHEME VARIABLE
+@import "tools/variable";
+
+// BOOTSTRAP 4
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// MIXINS
+@import "../../../../contrib/bfd/assets/scss/tools/mixins";
+
+
+// THEME
+@import "../../../../contrib/bfd/assets/scss/tools/theme";
+
+// SUBTHEME
+@import 'tools/subtheme';
+
+// Import SCSS file from the base theme. 
+@import "../../../../contrib/bfd/assets/scss/style";

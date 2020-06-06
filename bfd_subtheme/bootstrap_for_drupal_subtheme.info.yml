@@ -1,0 +1,32 @@
+# METADATA
+name: 'Bootstrap for Drupal - Subtheme'
+type: theme
+description: 'Bootstrap for Drupal Subtheme - octogone.dev'
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - bootstrap_for_drupal_subtheme/global-styling
+base theme: bootstrap_for_drupal
+libraries-override:
+  bootstrap_for_drupal/global-styling:
+    css:
+      theme:
+        assets/css/style.css: assets/css/style.css
+    js:
+      assets/js/global.js: assets/js/global.js
+
+regions:
+  header_special: 'Header - special'
+  nav_main: 'Navigation - Main'
+  nav_add: 'Navigation - Additional '
+  content_before: 'Content - before'
+  content: 'Content - main '
+  content_after: 'Content - after'
+  sidebar_left: 'Content - Sidebar'
+  footer_left: 'Footer - left box'
+  footer_center: 'Footer - center box'
+  footer_right: 'Footer - right box'
+  footer_sub_left: 'Footer sub - left box'
+  footer_sub_center: 'Footer sub - center box'
+  footer_sub_right: 'Footer sub - right box'
+  modal_container: 'Modal box container'
