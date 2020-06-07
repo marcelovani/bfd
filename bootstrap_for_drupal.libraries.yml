@@ -1,9 +1,8 @@
 global-styling:
-  version: 1.x
+  version: VERSION
   css:
     theme:
       assets/css/style.css: {}
-      assets/css/style-custom.css: {}
       //fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap: {}
   js:
     /core/assets/vendor/popperjs/popper.min.js: {}
@@ -13,3 +12,9 @@ global-styling:
     - core/drupal
     - core/jquery
     - core/jquery.once
+
+custom-styling:
+  version: VERSION
+  css:
+    theme:
+      public://bfd-custom.css: {}

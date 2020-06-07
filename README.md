@@ -5,6 +5,7 @@ CONTENTS OF THIS FILE
 ============
 
  * INTRODUCTION
+ * DRUPAL 9
  * NOTES
  * FEATURES
  * INSTALLATION
@@ -38,15 +39,14 @@ This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
 [![Demo](assets/image/readme/demo-button.png)][7]
 
+## DRUPAL 9
+  This theme is available for Drupal 9
+  
 ## SCREENSHOT
 ![Desktop](assets/image/readme/bootstrap-for-drupal-desktop-screenshot.jpg "screnshot")
 
 NOTES
 ======
-
-**To avoid error screen : Before updating from 8.x-1.x to 8.x-2.x., create an
-image style named "wide" (600x200, scale and crop). Or Uninstall the theme,
-update it and reinstall it - but that way you will have to replace blocks.**
 
 * Windows Edge V18 is not supported (it does not support **mask** CSS
   properties), only Edge +V79 is supported;
@@ -189,9 +189,10 @@ one or both of the admin bars are active, in desktop or mobile screen.	Go to
 choose Adminimal.
 
 In **ressources/css** there is a **adminimal-custom.css** that match the
-color scheme of this theme. To use it copy it in **files** folder and tick
-"Use adminimal-custom.css" in `/admin/appearance/settings/adminimal_theme`.
-This is a native feature of the Adminimal theme.
+color scheme of this theme. To use it copy it in **sites/default/files** folder
+and tick "Use adminimal-custom.css" in
+`/admin/appearance/settings/adminimal_theme`. This is a native feature of
+the Adminimal theme.
 
 **List of modules to install:**
 
@@ -281,29 +282,32 @@ In this theme there is tools for you to customize this theme with and
 whitout subtheme.
 
 ## WITH SUBTHEME
-Copy the `bfd_subtheme` folder to `/sites/themes/custom` folder and set it as
-`default theme`.
+Copy the `ressources/bfd_subtheme` folder to `/sites/themes/custom` folder and
+set it as `default theme`.
 
 ### CSS
-There is a CSS file at `bfd_subtheme/assets/css/style-custom.css` for you to
-add your custom CSS
+There is a CSS file at `bfd_subtheme/assets/css/style-custom.css`
+for you to add your custom CSS
 
 ### SCSS
-You can theme with SCSS by adding SCSS files to the master theme SCSS file
+You can theme directly with the file `bfd_subtheme/assets/scss/base/_base.scss`
+and add SCSS files to the master SCSS file
 `bfd_subtheme/assets/scss/tools/_subtheme.scss`. Gulp file is provided to
 compile SCSS but you will have to install node.js modules.
 
 #### Note
 If you are using a multisites Drupal instance you have also to copy the
-`Bootstrap for drupal` base theme to your site specific folder 
+`Bootstrap for drupal` base theme to your site specific folder
 `/themes/contrib` or change the relative path in the SCSS master file -
 `bfd_subtheme/assets/scss/style.scss`.
 
 ## WITHOUT SUBTHEME
 
 ### CSS
-There is a CSS file at `assets/css/style-custom.css` for you to add your
-custom CSS rules.
+To use a custom CSS go to the theme settings in
+`/admin/appearance/settings/bootstrap_for_drupal` Tick "Use bfd-custom.css".
+That setting will create a "bfd-custom.css" in `files` folder that you can use
+to customize the theme.
 
 ### SCSS
 There is a SCSS template folder for you to add your custom CSS without subtheme.
@@ -342,7 +346,6 @@ FUTUR DEVELOPEMENT
 
 * Multi-color / font combinations in the theme configuration with one click
 (in same layout).
-* Drupal 9 porting.
 
 ## DISTRIBUTION
 A payed distribution will be soon available with a editing system that

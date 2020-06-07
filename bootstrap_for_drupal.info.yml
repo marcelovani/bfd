@@ -8,7 +8,6 @@ base theme: classy
 
 libraries:
   - bootstrap_for_drupal/global-styling
-
 regions:
   header_special: 'Header - special'
   nav_main: 'Navigation - Main'
