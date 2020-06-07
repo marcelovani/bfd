@@ -41,7 +41,7 @@ This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
 ## DRUPAL 9
   This theme is available for Drupal 9
-  
+
 ## SCREENSHOT
 ![Desktop](assets/image/readme/bootstrap-for-drupal-desktop-screenshot.jpg "screnshot")
 
@@ -283,11 +283,14 @@ whitout subtheme.
 
 ## WITH SUBTHEME
 Copy the `ressources/bfd_subtheme` folder to `/sites/themes/custom` folder and
-set it as `default theme`.
+set it as `default theme`. Drupal.org provide
+[documentation about sub-themes][10] and how to customize it.
 
 ### CSS
-There is a CSS file at `bfd_subtheme/assets/css/style-custom.css`
-for you to add your custom CSS
+To use a custom CSS go to the theme settings in
+`/admin/appearance/settings/bootstrap_for_drupal` Tick "Use bfd-custom.css".
+That setting will create a "bfd-custom.css" in `files` folder that you can use
+to customize the theme.
 
 ### SCSS
 You can theme directly with the file `bfd_subtheme/assets/scss/base/_base.scss`
@@ -397,3 +400,4 @@ No requirements.
 [7]:https://bootstrap-for-drupal.octogone.dev/
 [8]:https://www.buymeacoffee.com/octogonedev
 [9]:https://getbootstrap.com/
+[10]:https://www.drupal.org/docs/theming-drupal/creating-sub-themes

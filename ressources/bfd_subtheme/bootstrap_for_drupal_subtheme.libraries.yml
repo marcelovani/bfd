@@ -3,6 +3,5 @@ global-styling:
   css:
     theme:
       assets/css/style.css: {}
-      assets/css/style-custom.css: {}
   js:
     assets/js/global.js: {}
