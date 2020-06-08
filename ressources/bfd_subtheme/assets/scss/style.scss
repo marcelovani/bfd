@@ -4,26 +4,19 @@
 @charset "UTF-8";
 
 // NOTE:
-// You might need to change the relative path in this file if you dont put the subtheme in /sites/themes/custom.
 
-// THEME VARIABLE
-@import "../../../../contrib/bfd/assets/scss/tools/variable";
-
-// SUBTHEME VARIABLE
+// SUBTHEME VARIABLE - same as the base theme
 @import "tools/variable";
 
 // BOOTSTRAP 4
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "vendor/bootstrap";
 
 // MIXINS
-@import "../../../../contrib/bfd/assets/scss/tools/mixins";
+@import "tools/mixins";
 
-
-// THEME
+// BASE THEME STYLE
+// You might need to change the relative path of this file if you dont put the subtheme in /sites/themes/custom and the base theme in /sites/themes/custom.
 @import "../../../../contrib/bfd/assets/scss/tools/theme";
 
-// SUBTHEME
+// SUBTHEME  STYLE
 @import 'tools/subtheme';
-
-// Import SCSS file from the base theme. 
-@import "../../../../contrib/bfd/assets/scss/style";

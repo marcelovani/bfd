@@ -14,7 +14,7 @@ SUBTHEME USAGE
 
 # CSS
 To use a custom CSS go to the theme settings in
-`/admin/appearance/settings/bootstrap_for_drupal` Tick "Use bfd-custom.css".
+`/admin/appearance/settings/bootstrap_for_drupal_subtheme` Tick "Use bfd-custom.css".
 That setting will create a "bfd-custom.css" in `files` folder that you can use
 to customize the theme.
 

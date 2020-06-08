@@ -277,9 +277,11 @@ be used when the image is cropped or cropped and scaled.
 remove the **text formats guidelines** below the forms.
 
 CUSTOMIZING
-============
+======
+
 In this theme there is tools for you to customize this theme with and
-whitout subtheme.
+whitout subtheme. Note that this theme is designed to be stylized with SCSS,
+but there is a custom CSS available.
 
 ## WITH SUBTHEME
 Copy the `ressources/bfd_subtheme` folder to `/sites/themes/custom` folder and
@@ -288,9 +290,9 @@ set it as `default theme`. Drupal.org provide
 
 ### CSS
 To use a custom CSS go to the theme settings in
-`/admin/appearance/settings/bootstrap_for_drupal` Tick "Use bfd-custom.css".
-That setting will create a "bfd-custom.css" in `files` folder that you can use
-to customize the theme.
+`/admin/appearance/settings/bootstrap_for_drupal_subtheme` Tick
+"Use bfd-custom.css". That setting will create a "bfd-custom.css" in `files`
+folder that you can use to customize the theme.
 
 ### SCSS
 You can theme directly with the file `bfd_subtheme/assets/scss/base/_base.scss`
