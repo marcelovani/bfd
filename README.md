@@ -340,11 +340,11 @@ FOR DEVELOPERS
    of bootstrap classes.
 
   List of Bootstrap components integrated  :
-  * status message
-  * pager
-  * breadcrumbs
-  * tooltips, popover, modal, carousel (check javascript for target)
-  * form (custom style) : submit, input, checkbox, select, radio, textfield
+  * status message;
+  * pager;
+  * breadcrumbs;
+  * tooltips, popover, modal, carousel (check javascript for target);
+  * form (custom style) : submit, input, checkbox, select, radio, textfield.
 
 DISTRIBUTION
 ============
