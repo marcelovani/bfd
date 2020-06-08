@@ -15,7 +15,7 @@ CONTENTS OF THIS FILE
  * SUGGESTED MODULES
  * CUSTOMIZING
  * FOR DEVELOPERS
- * FUTUR DEVELOPMENTS
+ * DISTRIBUTION
  * REQUIREMENTS
 
 INTRODUCTION
@@ -346,13 +346,8 @@ FOR DEVELOPERS
   * tooltips, popover, modal, carousel (check javascript for target)
   * form (custom style) : submit, input, checkbox, select, radio, textfield
 
-FUTUR DEVELOPEMENT
+DISTRIBUTION
 ============
-
-* Multi-color / font combinations in the theme configuration with one click
-(in same layout).
-
-## DISTRIBUTION
 A payed distribution will be soon available with a editing system that
 integrate the powerfull **paragraph** and **entity browser** component:
 full spectrum of content and multimedia content can be added with a couple
@@ -387,9 +382,6 @@ of clicks in the edit form. Javascript features . Development is currently
 * Mailchimp integration
 * Notification system
 * Pre-configured roles
-
-REQUIREMENTS
-======
 
 No requirements.
 
