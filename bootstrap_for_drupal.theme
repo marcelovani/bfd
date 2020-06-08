@@ -79,7 +79,6 @@ function bootstrap_for_drupal_theme_suggestions_form_alter(array &$suggestions, 
  * Implements hook_form_system_theme_settings_alter().
  */
 function bootstrap_for_drupal_form_system_theme_settings_alter(&$form, FormStateInterface &$form_state, $form_id = NULL) {
-  // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
   }
@@ -90,11 +89,6 @@ function bootstrap_for_drupal_form_system_theme_settings_alter(&$form, FormState
   $custom_css_path = 'public://bfd-custom.css';
   $custom_css_dir = str_replace($base_url . '/', "", file_create_url($custom_css_path));
   $custom_css_url = file_create_url($custom_css_path);
-
-  // Try to create the bfd-custom.css file automatically.
-  if (!file_exists($custom_css_path)) {
-    file_unmanaged_save_data("", $custom_css_path, FILE_EXISTS_ERROR);
-  }
 
   $form['bfd_custom'] = [
     '#type' => 'fieldset',
