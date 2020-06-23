@@ -279,48 +279,57 @@ remove the **text formats guidelines** below the forms.
 CUSTOMIZING
 ======
 
-In this theme there is tools for you to customize this theme with and
+In this theme there is tools for you to customize it with and
 whitout subtheme. Note that this theme is designed to be stylized with SCSS,
 but there is a custom CSS available.
 
+## ABOUT SCSS SETUP
+
+Gulp file is provided and SCCS files are configured to be built with node.js.
+You have to configure node.js environement yourself with `node_modules` folder
+at root of the theme. Check gulp.js of the theme for the modules
+requirements. This [documentation][11] might help you,
+
+If you are using a multisites Drupal instance with subtheme you have to copy
+the "Bootstrap for drupal" base theme to your site specific folder
+`/themes/contrib` or change the relative path in the SCSS master file -
+`bfd_subtheme/assets/scss/style.scss`.
+
 ## WITH SUBTHEME
+
 Copy the `ressources/bfd_subtheme` folder to `/sites/themes/custom` folder and
 set it as `default theme`. Drupal.org provide
 [documentation about sub-themes][10] and how to customize it.
 
 ### CSS
+
 To use a custom CSS go to the theme settings in
 `/admin/appearance/settings/bootstrap_for_drupal_subtheme` Tick
 "Use bfd-custom.css". That setting will create a "bfd-custom.css" in `files`
 folder that you can use to customize the theme.
 
 ### SCSS
-You can theme directly with the file `bfd_subtheme/assets/scss/base/_base.scss`
-and add SCSS files to the master SCSS file
-`bfd_subtheme/assets/scss/tools/_subtheme.scss`. Gulp file is provided to
-compile SCSS but you will have to install node.js modules.
 
-#### Note
-If you are using a multisites Drupal instance you have to copy the
-"Bootstrap for drupal" base theme to your site specific folder `/themes/contrib`
-or change the relative path in the SCSS master file -
-`bfd_subtheme/assets/scss/style.scss`.
+After node.js configuration, you can theme directly with the file
+`bfd_subtheme/assets/scss/base/_base.scss` and add SCSS files to the master
+SCSS file `bfd_subtheme/assets/scss/tools/_subtheme.scss`.
 
 ## WITHOUT SUBTHEME
 
 ### CSS
+
 To use a custom CSS go to the theme settings in
 `/admin/appearance/settings/bootstrap_for_drupal` Tick "Use bfd-custom.css".
 That setting will create a "bfd-custom.css" in `files` folder that you can use
 to customize the theme.
 
 ### SCSS
+
 In the theme, there is a SCSS template folder for you to add your custom CSS
 without subtheme. Find in `assets/scss/tools` a `custom` folder, copy it to
 `assets/scss/` and in the bottom of the file `assets/scss/style.scss`
-uncomment the line `@import 'custom/include`. **After updating the theme**
-dont forget to uncomment that line again. Gulp file is provided to
-compile SCSS but you will have to install node.js modules.
+uncomment the line `@import custom/include`. **After updating the theme**
+dont forget to uncomment that line again.
 
 FOR DEVELOPERS
 ============
@@ -395,3 +404,4 @@ No requirements.
 [8]:https://www.buymeacoffee.com/octogonedev
 [9]:https://getbootstrap.com/
 [10]:https://www.drupal.org/docs/theming-drupal/creating-sub-themes
+[11]:https://medium.com/swlh/setting-up-gulp-4-0-2-for-bootstrap-sass-and-browsersync-7917f5f5d2c5
