@@ -5,7 +5,6 @@ CONTENTS OF THIS FILE
 ============
 
  * INTRODUCTION
- * DRUPAL 9
  * NOTES
  * FEATURES
  * INSTALLATION
@@ -13,9 +12,8 @@ CONTENTS OF THIS FILE
  * CREATE CONTENT
  * BETTER ADMINISTRATION EXPERIENCE
  * SUGGESTED MODULES
- * CUSTOMIZING
  * FOR DEVELOPERS
- * DISTRIBUTION
+ * FUTUR DEVELOPMENTS
  * REQUIREMENTS
 
 INTRODUCTION
@@ -28,30 +26,26 @@ This theme aims to provide users with **the best possible experience out
  of the box**, right after Drupal installation: All native Drupal blocks
   and menus are placed and stylized along with all native pages and forms.
 
-This theme provides an advanced main navigation for desktop and mobile with a
-dynamic search bar, see it in action in the **animated gif on the right
-hand side**.
-It is a Bootstrap 4 base solution for developers with SCSS files provided.
+It also intended to be a **Bootstrap 4 base solution** for developers with
+SCSS files provided.
+
+This theme provides an advanced main navigation for desktop and mobile with
+a dynamic search bar, see it in action in the **animated gif below**.
 
 This theme is created by [OCTOGONE.DEV](http://www.octogone.dev)
 
-[![Support us by offering a coffee](assets/image/readme/support-button.png)][8]
+[![Support us by offering a coffee](https://bootstrap-for-drupal.octogone.dev/sites/default/files/support-button.png)][8]
 
-[![Demo](assets/image/readme/demo-button.png)][7]
-
-## DRUPAL 9
-  This theme is available for Drupal 9
+[![Demo](https://bootstrap-for-drupal.octogone.dev/sites/default/files/demo-button.png)][7]
 
 ## SCREENSHOT
-![Desktop](assets/image/readme/bootstrap-for-drupal-desktop-screenshot.jpg "screnshot")
+![Desktop](https://bootstrap-for-drupal.octogone.dev/sites/default/files/screenshot-bfd.jpg "screenshot")
 
 NOTES
 ======
 
 * Windows Edge V18 is not supported (it does not support **mask** CSS
   properties), only Edge +V79 is supported;
-* Bootstrap Tooltips and popover do not work when logged in;
-* This version is built with  Bootstrap v4.4.1
 
 ## COMPARISON WITH THE MAIN THEMES BASED ON BOOTSTRAP
 
@@ -79,7 +73,7 @@ FEATURES
 
  Desktop Menu            |  Mobile menu
 :-------------------------:|:-------------------------:
-![Desktop Menu](assets/image/readme/bootstrap-for-drupal-menu-desktop.gif "Animated dropdown") | ![mobile menu](assets/image/readme/bootstrap-for-drupal-menu-mobile.gif "Mobile menu")
+![Desktop Menu](https://bootstrap-for-drupal.octogone.dev/sites/default/files/bootstrap-for-drupal-menu-desktop.gif "Animated dropdown") | ![mobile menu](https://bootstrap-for-drupal.octogone.dev/sites/default/files/bootstrap-for-drupal-menu-mobile.gif "Mobile menu")
 
 ## OTHERS
  * Responsive branding header with Logo, slogan and site name
@@ -88,7 +82,7 @@ FEATURES
  * All native pages are stylized
  * Multilingual support
  * Comments are stylized
- * Forums are stylized [Demo][1] and responsive
+ * Forums are stylized [Demo][1] and are responsive
  * Books are stylized [Demo][2]
  * All forms are stylized
  * Print version
@@ -115,7 +109,7 @@ installation and the website is immediately usable. You only have to create
 ## SLOGAN
   The maximum length of the slogan is 256 characters
 
-## HOME PAGE
+## FRONTPAGE
   The image style of the content type article indexed in the frontpage is
   defined is the twig template `node--view--frontpage.html.twig`.  
 
@@ -162,6 +156,7 @@ anonymous to **View content hits** at the page`/admin/people/permissions`.
 CREATE CONTENT
 ======
 
+## CONTENT
 Visit the page [Administering a Drupal 8 site][3]
 for more information. Note that the **text in the summary field** is the text
 used by the home page to list content.
@@ -189,10 +184,9 @@ one or both of the admin bars are active, in desktop or mobile screen.	Go to
 choose Adminimal.
 
 In **ressources/css** there is a **adminimal-custom.css** that match the
-color scheme of this theme. To use it copy it in **sites/default/files** folder
-and tick "Use adminimal-custom.css" in
-`/admin/appearance/settings/adminimal_theme`. This is a native feature of
-the Adminimal theme.
+color scheme of this theme. To use it copy it to the **files folder** and tick
+"Use adminimal-custom.css" in `/admin/appearance/settings/adminimal_theme`.
+This is anative feature the Adminimal theme.
 
 **List of modules to install:**
 
@@ -273,124 +267,126 @@ be used when the image is cropped or cropped and scaled.
 
 
 ## ALLOWED FORMATS
-[allowed_formats](https://www.drupal.org/project/allowed_formats) allow to
-remove the **text formats guidelines** below the forms.
+[allowed_formats](https://www.drupal.org/project/allowed_formats) allow for
+the removal of the **text formats guidelines** below the forms.
 
 CUSTOMIZING
-======
+============
 
-In this theme there is tools for you to customize it with and
-whitout subtheme. Note that this theme is designed to be stylized with SCSS,
-but there is a custom CSS available.
+In this theme there are tools for you to customize it with and whitout a
+subtheme. Note that this theme is designed to be stylized with SCSS, but
+there is a custom CSS available.
 
-## ABOUT SCSS SETUP
-
-Gulp file is provided and SCCS files are configured to be built with node.js.
-You have to configure node.js environement yourself with `node_modules` folder
-at root of the theme. Check gulp.js of the theme for the modules
-requirements. This [documentation][11] might help you,
+ABOUT SCSS SETUP
+============
+Gulp file are provided and SCCS files are configured to be built with node.js.
+You have to configure node.js environement yourself with node_modules folder
+at root of the theme. Check gulp.js of the theme for the modules requirements.
+This [documentation][10] might help you,
 
 If you are using a multisites Drupal instance with subtheme you have to copy
-the "Bootstrap for drupal" base theme to your site specific folder
-`/themes/contrib` or change the relative path in the SCSS master file -
+the "Bootstrap for Drupal" base theme to your site specific folder
+`themes/contrib` or change the relative path in the SCSS master file -
 `bfd_subtheme/assets/scss/style.scss`.
 
-## WITH SUBTHEME
+WITH SUBTHEME
+============
+Copy the `resources/bfd_subtheme` folder to `/sites/themes/custom`  folder
+and set it as default theme. Drupal.org provide
+[documentation about sub-themes][11] and how to customize it.
 
-Copy the `ressources/bfd_subtheme` folder to `/sites/themes/custom` folder and
-set it as `default theme`. Drupal.org provide
-[documentation about sub-themes][10] and how to customize it.
-
-### CSS
-
+## CSS
 To use a custom CSS go to the theme settings in
 `/admin/appearance/settings/bootstrap_for_drupal_subtheme` Tick
-"Use bfd-custom.css". That setting will create a "bfd-custom.css" in `files`
+"Use bfd-custom.css". That setting will create a "bfd-custom.css" in files
 folder that you can use to customize the theme.
 
-### SCSS
-
+## SCSS
 After node.js configuration, you can theme directly with the file
 `bfd_subtheme/assets/scss/base/_base.scss` and add SCSS files to the master
 SCSS file `bfd_subtheme/assets/scss/tools/_subtheme.scss`.
 
-## WITHOUT SUBTHEME
+WITHOUT SUBTHEME
+============
 
-### CSS
-
+## CSS
 To use a custom CSS go to the theme settings in
 `/admin/appearance/settings/bootstrap_for_drupal` Tick "Use bfd-custom.css".
-That setting will create a "bfd-custom.css" in `files` folder that you can use
+That setting will create a "bfd-custom.css" in files folder that you can use
 to customize the theme.
 
-### SCSS
-
+## SCSS
 In the theme, there is a SCSS template folder for you to add your custom CSS
-without subtheme. Find in `assets/scss/tools` a `custom` folder, copy it to
+without a subtheme. Find in `assets/scss/tools` a custom folder, copy it to
 `assets/scss/` and in the bottom of the file `assets/scss/style.scss`
 uncomment the line `@import custom/include`. **After updating the theme**
-dont forget to uncomment that line again.
+don't forget to uncomment that line again.
 
 FOR DEVELOPERS
 ============
-
  * All SCSS files are provided
  * Custom bootstrap variables overwrite SCSS file
  * Only SVG icons with mask attribute are used, allowing for:
-   color/size/position/transition with CSS. Note that **mask** CSS
-   properties are not supported by Edge V18. No use of icon frameworks
-   (like fontawesome - weight 2MB), all svg icons are local and thus lighter
-   (60kb in total). Maximum bootstrap integration into the theme
- * Gulp file is provided and SCCS files are configured to be built
-   with node.js
+ color/size/position/transition with CSS. Note that mask CSS properties are
+ not supported by Edge V18. No use of icon frameworks ( like fontawesome -
+   weight 2MB), all svg icons are local and thus lighter (60kb in total).
+ * Maximum bootstrap integration into the theme
+ * Gulp file is provided and SCCS files are configured to be built with
+ node.js, see instructions
 
 ## BOOTSTRAP 4 FEATURES
-  The theme is totally built with the Bootstrap grid system and maximum usage
+  The theme is entirely built with the Bootstrap grid system and maximum usage
    of bootstrap classes.
 
   List of Bootstrap components integrated  :
-  * status message;
-  * pager;
-  * breadcrumbs;
-  * tooltips, popover, modal, carousel (check javascript for target);
-  * form (custom style) : submit, input, checkbox, select, radio, textfield.
+  * status message
+  * pager
+  * breadcrumbs
+  * tooltips, popover, modal, carousel (check javascript for target)
+  * form (custom style) : submit, input, checkbox, select, radio, textfield
 
 DISTRIBUTION
 ============
-A payed distribution will be soon available with a editing system that
-integrate the powerfull **paragraph** and **entity browser** component:
-full spectrum of content and multimedia content can be added with a couple
-of clicks in the edit form. Javascript features . Development is currently
-**ongoing**, link to distribution will be available soon.
+A payed distribution will be soon available with an editing system that
+integrate the powerfull **paragraph** and **entity browser** component: full
+spectrum of content and multimedia content can be added with a few clicks in
+the edit form. Also Javascript features. Development is currently **ongoing**,
+link to distribution will be available soon.
 
-### Features
-* Complete list of HTML typography tags stylized in a template page
-* Dynamic scrollspy with auto-generated menu (javascript)
-* Up / down scroll button (javascript)
-* Paragraph components/entity browser
-  - Edit form: Paragraph **BS4 components**: tabs, carousel, accordion.
-  - Edit form: Paragraph **BS4 gallery**: this gallery is build only with
-  BS4 components
-  - Edit form: Paragraph **video components**: mediaelement.js player with
-  playlist: mp4, ogg, webm.  Browsing via entity browser Can be mixed with
-  remote video
-  - Edit form: Paragraph **remote video components**: mediaelement.js player
-  with playlist: youtube, vimeo, daylimotion + M(PEG)-DASH, HLS stream.
-  Browsing via entity browser. Can be mixed with local video
-  - Edit form: Paragraph **audio components**: mediaelement.js  player with
-  playlist: mp3, flac, aac, ogg.  Browsing  via entity browser
-  - Edit form: Paragraph **content components** allowing embed of content
-  (BS4 card display) into the content type.  Browsing via entity browser
-  - Edit form: Paragraph **social media components** allowing embed of
-  twitter, facebook, instagram mixed in a masonry style.
-  - Edit form: Paragraph **document components** Browsing via entity browser
-  - Edit form: Paragraph **Link components** with custom thumbnails and
-  description
-  - Edit form: Paragraph **HTML table components** allowing  building of
-  advanced tables
-* Mailchimp integration
-* Notification system
-* Pre-configured roles
+## Features
+
+  * Complete list of HTML typography tags stylized in a template page
+  * Dynamic scrollspy with auto-generated menu (javascript)
+  * Up / down scroll button (javascript)
+  * Paragraph components/entity browser
+    * Edit form: Paragraph BS4 components: tabs, carousel, accordion.
+    * Edit form: Paragraph BS4 gallery: this gallery is build only with BS4
+    components
+    * Edit form: Paragraph video components: mediaelement.js player with
+    playlist: mp4, ogg, webm. Browsing via entity browser Can be mixed with
+    remote video
+    * Edit form: Paragraph remote video components: mediaelement.js player
+    with playlist: youtube, vimeo, daylimotion + M(PEG)-DASH, HLS stream.
+    Browsing via entity browser. Can be mixed with local video
+    * Edit form: Paragraph audio components: mediaelement.js player with
+    playlist: mp3, flac, aac, ogg. Browsing via entity browser
+    * Edit form: Paragraph content components allowing embedding of content
+    (BS4 card display) into the content type. Browsing via entity browser
+    * Edit form: Paragraph social media components allowing embedding of
+    twitter, facebook, instagram mixed in a masonry style.
+    * Edit form: Paragraph document components browsing via entity browser
+    * Edit form: Paragraph HTML table components allowing building of advanced
+    tables
+    * Edit form: Paragraph Link components with custom thumbnails and
+    descriptions
+  * Mailchimp integration
+  * Notification system
+  * Pre-configured roles
+
+  [![Support us by offering a coffee](https://bootstrap-for-drupal.octogone.dev/sites/default/files/support-button.png)][8]
+
+REQUIREMENTS
+======
 
 No requirements.
 
@@ -401,7 +397,8 @@ No requirements.
 [5]:https://www.drupal.org/project/adminimal_admin_toolbar
 [6]:https://www.drupal.org/project/adminimal_theme
 [7]:https://bootstrap-for-drupal.octogone.dev/
-[8]:https://www.buymeacoffee.com/octogonedev
+[8]:https://bootstrap-for-drupal.octogone.dev/node/185
 [9]:https://getbootstrap.com/
-[10]:https://www.drupal.org/docs/theming-drupal/creating-sub-themes
-[11]:https://medium.com/swlh/setting-up-gulp-4-0-2-for-bootstrap-sass-and-browsersync-7917f5f5d2c5
+[10]:https://medium.com/swlh/setting-up-gulp-4-0-2-for-bootstrap-sass-and-browsersync-7917f5f5d2c5
+[11]:https://www.drupal.org/docs/theming-drupal/creating-sub-themes
+
