@@ -401,4 +401,3 @@ No requirements.
 [9]:https://getbootstrap.com/
 [10]:https://medium.com/swlh/setting-up-gulp-4-0-2-for-bootstrap-sass-and-browsersync-7917f5f5d2c5
 [11]:https://www.drupal.org/docs/theming-drupal/creating-sub-themes
-
