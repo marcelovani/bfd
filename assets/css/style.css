@@ -18041,15 +18041,47 @@ ol.breadcrumb .breadcrumb-item {
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - page/_page-user.scss                                      */
 /* ---------------------------------------------------------------------------*/
-.field--name-user-picture img {
+.path-user .field--name-user-picture img {
   border-radius: 50%;
+}
+
+.path-user #block-bootstrap-for-drupal-page-title,
+.path-user .profile {
+  text-align: center;
+}
+
+.path-user .profile h4 {
+  display: block;
 }
 
 /* ---------------------------------------------------------------------------*/
 /* MOBILE FIRST - page/_page-frontpage.scss                                      */
 /* ---------------------------------------------------------------------------*/
-.path-frontpage article.node--sticky img.image-style-wide {
-  border: 5px solid #ffc107;
+.path-frontpage .node--sticky {
+  position: relative;
+}
+.path-frontpage .node--sticky:after {
+  -webkit-mask: url("../icon/office-pin.svg");
+  mask: url("../icon/office-pin.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  content: '';
+  display: inline-block;
+  background-color: #fd7e14;
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+.path-frontpage .node--sticky:hover:after {
+  background-color: #fea860;
 }
 
 .path-frontpage article.node > h2 {

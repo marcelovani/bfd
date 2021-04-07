@@ -6,7 +6,17 @@
 @include media-breakpoint-up(xs) {
   //////////////////////////////////////////////////////////////////////////////
   // [ COMMON ]
-  .field--name-user-picture img {
-    border-radius: 50%;
+  .path-user {
+    .field--name-user-picture img {
+      border-radius: 50%;
+    }
+    #block-bootstrap-for-drupal-page-title,
+    .profile {
+      text-align: center;
+    }
+    .profile h4 {
+      display: block;
+    }
+
   }
 }
