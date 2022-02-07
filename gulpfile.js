@@ -3,28 +3,56 @@
  * Provides Gulp configurations and tasks for Bootstrap for Drupal theme.
  */
 'use strict';
-const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-// Static Server + watching scss/html files
-gulp.task('serve', ['sass'], () => {
+const { src, watch, series, dest } = require('gulp')
+const browserSync = require('browser-sync').create()
+const sass = require('gulp-sass')(require('sass'))
+const autoprefixer = require('gulp-autoprefixer')
+
+let browserSyncInitialised = false
+
+// Initialise browser-sync.
+function browserSyncInit(cb) {
+  browserSyncInitialised = true
+
   browserSync.init({
-    proxy: 'http://YOUR-DEV-URL.DEV'
-  });
+    proxy: process.env.npm_config_url || process.env.npm_package_config_url
+  })
+  cb()
+}
 
-  gulp
-    .watch('assets/scss/**/*.scss', ['sass'])
-    .on('change', browserSync.reload);
-});
-// Compile sass into CSS & auto-inject into browsers.
-gulp.task('sass', () =>
-  gulp
-  .src('assets/scss/style.scss')
-  .pipe(sass())
-  .pipe(autoprefixer())
-  .pipe(gulp.dest('assets/css'))
-  .pipe(browserSync.stream())
-);
+// Reload browser-sync.
+function browserSyncReload(cb) {
+  browserSync.reload()
+  cb()
+}
 
-gulp.task('default', ['serve']);
+// Watch files, run sass task and reload browser-sync.
+function watchTask() {
+  const tasks = [sassTask]
+
+  if (browserSyncInitialised) {
+    tasks.push(browserSyncReload)
+  }
+
+  watch('assets/scss/**/*.scss', series(...tasks))
+}
+
+// Compile SASS into CSS & auto-inject into browsers.
+function sassTask() {
+  const stream = src('assets/scss/style.scss')
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(dest('assets/css'))
+
+    if (browserSyncInitialised) {
+      stream
+        .pipe(browserSync.stream())
+    }
+
+    return stream
+}
+
+exports.build = sassTask
+exports.watch = series(sassTask, watchTask)
+exports.serve = series(sassTask, browserSyncInit, watchTask)
+exports.default = exports.serve

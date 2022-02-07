@@ -154,6 +154,18 @@ Copy the `resources/bfd_subtheme` folder to `/sites/themes/custom`  folder
 and set it as default theme. Drupal.org provide
 [documentation about sub-themes][11] and how to customize it.
 
+### DEVELOPMENT
+
+In order to make any changes go to the theme root directory and run `npm install`, which would install all the Node.js
+dependencies.
+
+Tasks:
+
+* `npm run build` will compile the resulting css file. It might require running `drush cr` to empty caches.
+* `npm run watch` will watch for changes to the `.scss` files and rebuild on each change.
+* `npm run serve` will use browser-sync and serve your web, making a refresh on each rebuild.
+    * `npm config set url <URL>` will set the URL to be served through browser-sync.
+
 ### CSS
 To use a custom CSS go to the theme settings in
 `/admin/appearance/settings/bootstrap_for_drupal_subtheme` Tick
