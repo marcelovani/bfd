@@ -87,7 +87,7 @@ function bootstrap_for_drupal_form_system_theme_settings_alter(&$form, FormState
   global $base_url;
   $bfd_path = \Drupal::service('extension.list.theme')->getPath('bootstrap_for_drupal');
   $custom_css_path = 'public://bfd-custom.css';
-  $custom_css_dir = str_replace($base_url . '/', "", file_create_url($custom_css_path));
+  $custom_css_dir = str_replace($base_url . '/', "", \Drupal::service('file_url_generator')->generateAbsoluteString($custom_css_path));
   $custom_css_url = \Drupal::service('file_url_generator')->generateAbsoluteString($custom_css_path);
 
   $form['bfd_custom'] = [
@@ -138,4 +138,4 @@ function bootstrap_for_drupal_form_system_theme_settings_alter(&$form, FormState
     ];
   }
 }
- 
+
